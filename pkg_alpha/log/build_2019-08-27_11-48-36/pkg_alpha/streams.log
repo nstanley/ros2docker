@@ -1,0 +1,28 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha -- -j4 -l4
+[35m[1mScanning dependencies of target node_alpha[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:[m[K In constructor ‘[01m[KNodeAlpha::NodeAlpha()[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:34:37:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalSubscriber[m[K’ has not been declared
+       "one_publish", 10, std::bind(&[01;31m[KMinimalSubscriber[m[K::topic_callback, this, _1));
+                                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:34:78:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope
+       "one_publish", 10, std::bind(&MinimalSubscriber::topic_callback, this, [01;31m[K_1[m[K));
+                                                                              [01;31m[K^~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:34:78:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/opt/ros/dashing/include/rclcpp/context.hpp:19:0[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/contexts/default_context.hpp:18[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executor.hpp:31[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:18[m[K:
+[01m[K/usr/include/c++/7/functional:275:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::placeholders::_1[m[K’
+     extern const _Placeholder<1> [01;36m[K_1[m[K;
+                                  [01;36m[K^~[m[K
+CMakeFiles/node_alpha.dir/build.make:62: recipe for target 'CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o' failed
+make[2]: *** [CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o] Error 1
+make[1]: *** [CMakeFiles/node_alpha.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/node_alpha.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha -- -j4 -l4

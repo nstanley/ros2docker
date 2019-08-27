@@ -1,0 +1,14 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha -- -j4 -l4
+[35m[1mScanning dependencies of target node_alpha[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:[m[K In member function ‘[01m[Kvoid NodeAlpha::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:29:41:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNodeAlpha::m_resultData[m[K’ in read-only object
+     m_resultData = (m_resultData + 1) * [01;31m[K2[m[K;
+                                         [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o] Error 1
+make[1]: *** [CMakeFiles/node_alpha.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/node_alpha.dir/build.make:62: recipe for target 'CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o' failed
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/node_alpha.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha -- -j4 -l4

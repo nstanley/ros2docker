@@ -1,0 +1,11 @@
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/package_run_dependencies/pkg_alpha
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/parent_prefix_path/pkg_alpha
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/environment/ament_prefix_path.sh
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/environment/path.sh
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.bash
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.sh
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.zsh
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/packages/pkg_alpha
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/cmake/pkg_alphaConfig.cmake
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/cmake/pkg_alphaConfig-version.cmake
+/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/package.xml

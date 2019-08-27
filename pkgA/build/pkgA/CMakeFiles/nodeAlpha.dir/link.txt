@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/nodeAlpha.dir/src/nodeAlpha.cpp.o  -o nodeAlpha 

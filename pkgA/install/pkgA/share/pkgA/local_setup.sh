@@ -1,1 +1,0 @@
-/home/blackjackdev/demos/ros2docker/pkgA/build/pkgA/ament_cmake_environment_hooks/local_setup.sh

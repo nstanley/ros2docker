@@ -14,25 +14,30 @@ class NodeAlpha : public rclcpp::Node
 public:
   NodeAlpha() : Node("node_alpha")
   {
+    // Create the publisher and subscriber
     m_publisher = this->create_publisher<std_msgs::msg::UInt32>("results", 10);
     m_subscription = this->create_subscription<std_msgs::msg::UInt32>(
       "sensor", 10, std::bind(&NodeAlpha::topic_callback, this, _1));
-    //m_timer = this->create_wall_timer(
-    //  500ms, std::bind(&NodeAlpha::timer_callback, this));
   }
 
 private:
 
+  // The callback method when a 'sensor' message is received
   void topic_callback(const std_msgs::msg::UInt32::SharedPtr msg) const
   {
+    // Print what we found on the 'sensor' topic
     RCLCPP_INFO(this->get_logger(), "RX Sensor Data: '%d'", msg->data);
+    // Calculate some result and send it back
     auto message = std_msgs::msg::UInt32();
     message.data = ((msg->data * msg->data) / 2) + 3;
     RCLCPP_INFO(this->get_logger(), "TX Result Data: '%d'", message.data);
     m_publisher->publish(message);
   }
 
+  // The subscription device
   rclcpp::Subscription<std_msgs::msg::UInt32>::SharedPtr m_subscription;
+
+  // The publisher device
   rclcpp::Publisher<std_msgs::msg::UInt32>::SharedPtr m_publisher;
 };
 

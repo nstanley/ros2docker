@@ -187,4 +187,7 @@ CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/rosidl_
 CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/std_msgs/msg/string.hpp
 CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/std_msgs/msg/string__struct.hpp
 CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/std_msgs/msg/string__traits.hpp
+CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/std_msgs/msg/u_int32.hpp
+CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/std_msgs/msg/u_int32__struct.hpp
+CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o: /opt/ros/dashing/include/std_msgs/msg/u_int32__traits.hpp
 

@@ -1,0 +1,20 @@
+[35m[1mScanning dependencies of target node_one[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_one.dir/src/node_one.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:57:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   std::uniform_int_distribution<int> m_randDistribution([01;31m[K1[m[K,6);
+                                                         [01;31m[K^[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:[m[K In member function ‘[01m[Kvoid NodeOne::timer_callback()[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:29:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KNodeOne::m_randDistribution(std::default_random_engine&)[m[K’
+     message.data = m_randDistribution(m_randGenerator[01;31m[K)[m[K;
+                                                      [01;31m[K^[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:38:[m[K [01;36m[Knote: [m[Kcandidate: std::uniform_int_distribution<int> NodeOne::m_randDistribution(int)
+   std::uniform_int_distribution<int> [01;36m[Km_randDistribution[m[K(1,6);
+                                      [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:38:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::default_random_engine {aka std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>}[m[K’ to ‘[01m[Kint[m[K’
+make[2]: *** [CMakeFiles/node_one.dir/src/node_one.cpp.o] Error 1
+CMakeFiles/node_one.dir/build.make:62: recipe for target 'CMakeFiles/node_one.dir/src/node_one.cpp.o' failed
+make[1]: *** [CMakeFiles/node_one.dir/all] Error 2
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/node_one.dir/all' failed
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

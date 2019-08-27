@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target node_alpha[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o[0m
+[100%] [32m[1mLinking CXX executable node_alpha[0m
+CMakeFiles/node_alpha.dir/build.make:134: recipe for target 'node_alpha' failed
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/node_alpha.dir/all' failed
+Makefile:140: recipe for target 'all' failed

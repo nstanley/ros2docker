@@ -1,0 +1,14 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4
+[35m[1mScanning dependencies of target node_one[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_one.dir/src/node_one.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:[m[K In member function ‘[01m[Kvoid NodeOne::topic_callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:36:32:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KNodeOne::m_sensorData[m[K’ in read-only object
+     m_sensorData = msg->data / [01;31m[K3[m[K;
+                                [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/node_one.dir/src/node_one.cpp.o] Error 1
+CMakeFiles/node_one.dir/build.make:62: recipe for target 'CMakeFiles/node_one.dir/src/node_one.cpp.o' failed
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/node_one.dir/all' failed
+make[1]: *** [CMakeFiles/node_one.dir/all] Error 2
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4

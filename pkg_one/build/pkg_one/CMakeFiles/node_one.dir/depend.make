@@ -187,4 +187,7 @@ CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/rosidl_type
 CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/std_msgs/msg/string.hpp
 CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/std_msgs/msg/string__struct.hpp
 CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/std_msgs/msg/string__traits.hpp
+CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/std_msgs/msg/u_int32.hpp
+CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/std_msgs/msg/u_int32__struct.hpp
+CMakeFiles/node_one.dir/src/node_one.cpp.o: /opt/ros/dashing/include/std_msgs/msg/u_int32__traits.hpp
 

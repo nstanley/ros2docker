@@ -1,0 +1,2 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4

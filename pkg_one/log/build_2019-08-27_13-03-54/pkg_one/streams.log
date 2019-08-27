@@ -1,0 +1,22 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4
+[35m[1mScanning dependencies of target node_one[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_one.dir/src/node_one.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:[m[K In constructor ‘[01m[KNodeOne::NodeOne()[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:16:33:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KNodeOne[m[K’ does not have any field named ‘[01m[Km_sensorData[m[K’
+   NodeOne() : Node("node_one"), [01;31m[Km_sensorData[m[K(0)
+                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:[m[K In member function ‘[01m[Kvoid NodeOne::topic_callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsensorData[m[K’ was not declared in this scope
+     [01;31m[KsensorData[m[K = msg->data / 3;
+     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:33:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetstate[m[K’
+     [01;36m[KsensorData[m[K = msg->data / 3;
+     [01;36m[K^~~~~~~~~~[m[K
+     [32m[Ksetstate[m[K
+CMakeFiles/node_one.dir/build.make:62: recipe for target 'CMakeFiles/node_one.dir/src/node_one.cpp.o' failed
+make[2]: *** [CMakeFiles/node_one.dir/src/node_one.cpp.o] Error 1
+make[1]: *** [CMakeFiles/node_one.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/node_one.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4

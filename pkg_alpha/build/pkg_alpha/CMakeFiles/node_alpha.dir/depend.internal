@@ -188,3 +188,6 @@ CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o
  /opt/ros/dashing/include/std_msgs/msg/string.hpp
  /opt/ros/dashing/include/std_msgs/msg/string__struct.hpp
  /opt/ros/dashing/include/std_msgs/msg/string__traits.hpp
+ /opt/ros/dashing/include/std_msgs/msg/u_int32.hpp
+ /opt/ros/dashing/include/std_msgs/msg/u_int32__struct.hpp
+ /opt/ros/dashing/include/std_msgs/msg/u_int32__traits.hpp

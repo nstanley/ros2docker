@@ -1,0 +1,108 @@
+[0.338s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.338s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths='.', build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base='log', log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f49fcca7588>>, merge_install=False, metas='./colcon.meta', packages_above=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f49fcca7588>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f49fcca78d0>)
+[0.423s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.425s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/blackjackdev/demos/ros2docker/pkg_one'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'colcon_meta'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extensions ['ros']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'ros'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extensions ['cmake', 'python']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'cmake'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'python'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extensions ['python_setup_py']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one) by extension 'python_setup_py'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/build) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/build) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/build) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/install) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/install) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/install) ignored
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/log) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/log) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/log) ignored
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'ignore_ament_install'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extensions ['colcon_pkg']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'colcon_pkg'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extensions ['colcon_meta']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'ros'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extensions ['cmake', 'python']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'cmake'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'python'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extensions ['python_setup_py']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src) by extension 'python_setup_py'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extension 'ignore'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extension 'ignore_ament_install'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one) by extension 'ros'
+[0.461s] DEBUG:colcon.colcon_core.package_identification:Package '/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one' with type 'ros.ament_cmake' and name 'pkg_one'
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'cmake_args' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'cmake_target' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'cmake_clean_cache' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'cmake_clean_first' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'cmake_force_configure' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'ament_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'catkin_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'pkg_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.472s] DEBUG:colcon.colcon_core.verb:Building package 'pkg_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one', 'merge_install': False, 'path': '/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one', 'symlink_install': True, 'test_result_base': None}
+[0.474s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.475s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.475s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one' with build type 'ament_cmake'
+[0.484s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.484s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one'
+[0.485s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.491s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4
+[4.563s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one -- -j4 -l4
+[4.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one --target install
+[4.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pkg_one)
+[4.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one --target install
+[4.725s] Level 1:colcon.colcon_core.environment:checking '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one' for CMake module files
+[4.725s] Level 1:colcon.colcon_core.environment:checking '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one' for CMake config files
+[4.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('pkg_one', 'cmake_prefix_path')
+[4.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/hook/cmake_prefix_path.ps1'
+[4.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/hook/cmake_prefix_path.sh'
+[4.732s] Level 1:colcon.colcon_core.environment:checking '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib'
+[4.732s] Level 1:colcon.colcon_core.environment:checking '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/bin'
+[4.732s] Level 1:colcon.colcon_core.environment:checking '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/pkgconfig/pkg_one.pc'
+[4.733s] Level 1:colcon.colcon_core.environment:checking '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages'
+[4.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/package.ps1'
+[4.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/package.sh'
+[4.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/package.bash'
+[4.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/package.zsh'
+[4.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/colcon-core/packages/pkg_one)
+[4.742s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.743s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.743s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.743s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.750s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.750s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.750s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.760s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.761s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blackjackdev/demos/ros2docker/pkg_one/install/local_setup.ps1'
+[4.765s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blackjackdev/demos/ros2docker/pkg_one/install/setup.ps1'
+[4.769s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blackjackdev/demos/ros2docker/pkg_one/install/local_setup.sh'
+[4.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blackjackdev/demos/ros2docker/pkg_one/install/setup.sh'
+[4.776s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blackjackdev/demos/ros2docker/pkg_one/install/local_setup.bash'
+[4.777s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blackjackdev/demos/ros2docker/pkg_one/install/setup.bash'
+[4.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/blackjackdev/demos/ros2docker/pkg_one/install/local_setup.zsh'
+[4.783s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/blackjackdev/demos/ros2docker/pkg_one/install/setup.zsh'

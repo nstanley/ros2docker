@@ -1,0 +1,25 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha -- -j4 -l4
+[35m[1mScanning dependencies of target node_alpha[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o[0m
+[100%] [32m[1mLinking CXX executable node_alpha[0m
+[100%] Built target node_alpha
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha -- -j4 -l4
+Invoking command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha --target install
+[100%] Built target node_alpha
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/package_run_dependencies/pkg_alpha
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/parent_prefix_path/pkg_alpha
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/environment/path.sh
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.bash
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.sh
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.zsh
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/packages/pkg_alpha
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/cmake/pkg_alphaConfig.cmake
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/cmake/pkg_alphaConfig-version.cmake
+-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/package.xml
+-- Installing: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/lib/pkg_alpha/node_alpha
+-- Set runtime path of "/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/lib/pkg_alpha/node_alpha" to ""
+Invoked command in '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha --target install

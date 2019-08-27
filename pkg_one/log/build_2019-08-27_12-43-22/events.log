@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.001888] (pkg_one) JobQueued: {'identifier': 'pkg_one', 'dependencies': OrderedDict()}
+[0.002069] (pkg_one) JobStarted: {'identifier': 'pkg_one'}
+[0.044803] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'cmake'}
+[0.047588] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'build'}
+[0.050213] (pkg_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1948'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/pkg_one/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '65024920'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1975,unix/blackjackvm:/tmp/.ICE-unix/1975'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one:/opt/ros/dashing')]), 'shell': False}
+[0.098788] (-) TimerEvent: {}
+[0.199576] (-) TimerEvent: {}
+[0.295402] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node_one\x1b[0m\n'}
+[0.299607] (-) TimerEvent: {}
+[0.328322] (pkg_one) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node_one.dir/src/node_one.cpp.o\x1b[0m\n'}
+[0.399709] (-) TimerEvent: {}
+[0.500450] (-) TimerEvent: {}
+[0.601203] (-) TimerEvent: {}
+[0.701678] (-) TimerEvent: {}
+[0.802455] (-) TimerEvent: {}
+[0.903638] (-) TimerEvent: {}
+[1.004420] (-) TimerEvent: {}
+[1.105611] (-) TimerEvent: {}
+[1.212292] (-) TimerEvent: {}
+[1.313365] (-) TimerEvent: {}
+[1.414108] (-) TimerEvent: {}
+[1.514790] (-) TimerEvent: {}
+[1.616010] (-) TimerEvent: {}
+[1.716676] (-) TimerEvent: {}
+[1.817372] (-) TimerEvent: {}
+[1.918134] (-) TimerEvent: {}
+[1.963541] (pkg_one) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[1.963877] (pkg_one) StderrLine: {'line': b'   std::uniform_int_distribution<int> m_randDistribution(\x1b[01;31m\x1b[K1\x1b[m\x1b[K,6);\n'}
+[1.964285] (pkg_one) StderrLine: {'line': b'                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.964600] (pkg_one) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[2.008151] (pkg_one) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NodeOne::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.008519] (pkg_one) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:29:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KNodeOne::m_randDistribution(std::default_random_engine&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.008757] (pkg_one) StderrLine: {'line': b'     message.data = m_randDistribution(m_randGenerator\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.008966] (pkg_one) StderrLine: {'line': b'                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.009201] (pkg_one) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: std::uniform_int_distribution<int> NodeOne::m_randDistribution(int)\n'}
+[2.009368] (pkg_one) StderrLine: {'line': b'   std::uniform_int_distribution<int> \x1b[01;36m\x1b[Km_randDistribution\x1b[m\x1b[K(1,6);\n'}
+[2.009565] (pkg_one) StderrLine: {'line': b'                                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.009829] (pkg_one) StderrLine: {'line': b'\x1b[01m\x1b[K/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/src/node_one.cpp:43:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::default_random_engine {aka std::linear_congruential_engine<long unsigned int, 16807, 0, 2147483647>}\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.024473] (-) TimerEvent: {}
+[2.125873] (-) TimerEvent: {}
+[2.226574] (-) TimerEvent: {}
+[2.328229] (-) TimerEvent: {}
+[2.429451] (-) TimerEvent: {}
+[2.530151] (-) TimerEvent: {}
+[2.632344] (-) TimerEvent: {}
+[2.733540] (-) TimerEvent: {}
+[2.834181] (-) TimerEvent: {}
+[2.935872] (-) TimerEvent: {}
+[2.974939] (pkg_one) StderrLine: {'line': b'make[2]: *** [CMakeFiles/node_one.dir/src/node_one.cpp.o] Error 1\n'}
+[2.975508] (pkg_one) StdoutLine: {'line': b"CMakeFiles/node_one.dir/build.make:62: recipe for target 'CMakeFiles/node_one.dir/src/node_one.cpp.o' failed\n"}
+[2.975697] (pkg_one) StderrLine: {'line': b'make[1]: *** [CMakeFiles/node_one.dir/all] Error 2\n'}
+[2.975863] (pkg_one) StdoutLine: {'line': b"CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/node_one.dir/all' failed\n"}
+[2.976056] (pkg_one) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[2.976259] (pkg_one) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[2.977637] (pkg_one) CommandEnded: {'returncode': 2}
+[2.978685] (pkg_one) JobEnded: {'identifier': 'pkg_one', 'rc': 2}
+[2.990709] (-) EventReactorShutdown: {}

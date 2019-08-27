@@ -1,0 +1,11 @@
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/ament_index/resource_index/package_run_dependencies/pkg1
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/ament_index/resource_index/parent_prefix_path/pkg1
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/environment/ament_prefix_path.sh
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/environment/path.sh
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/local_setup.bash
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/local_setup.sh
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/local_setup.zsh
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/ament_index/resource_index/packages/pkg1
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/cmake/pkg1Config.cmake
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/cmake/pkg1Config-version.cmake
+/home/blackjackdev/demos/ros2docker/pkg1/install/pkg1/share/pkg1/package.xml

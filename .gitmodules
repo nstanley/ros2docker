@@ -1,0 +1,3 @@
+[submodule "ia_msgs/src/ros2sharedlib"]
+	path = ia_msgs/src/ros2sharedlib
+	url = https://github.com/nstanley/ros2sharedlib

@@ -1,0 +1,2 @@
+BaseStruct core
+uint32 timestamp

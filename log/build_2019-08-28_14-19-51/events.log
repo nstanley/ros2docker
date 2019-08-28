@@ -1,0 +1,334 @@
+[0.000000] (-) TimerEvent: {}
+[0.000869] (ia_msgs) JobQueued: {'identifier': 'ia_msgs', 'dependencies': OrderedDict()}
+[0.000991] (pkg_alpha) JobQueued: {'identifier': 'pkg_alpha', 'dependencies': OrderedDict()}
+[0.001066] (pkg_one) JobQueued: {'identifier': 'pkg_one', 'dependencies': OrderedDict()}
+[0.003274] (ia_msgs) JobStarted: {'identifier': 'ia_msgs'}
+[0.030605] (pkg_alpha) JobStarted: {'identifier': 'pkg_alpha'}
+[0.043595] (pkg_one) JobStarted: {'identifier': 'pkg_one'}
+[0.051211] (ia_msgs) JobProgress: {'identifier': 'ia_msgs', 'progress': 'cmake'}
+[0.051572] (ia_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/install/ia_msgs'], 'cwd': '/home/blackjackdev/demos/ros2docker/build/ia_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71303171'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/build/ia_msgs'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing')]), 'shell': False}
+[0.060839] (pkg_alpha) JobProgress: {'identifier': 'pkg_alpha', 'progress': 'cmake'}
+[0.062461] (pkg_alpha) Command: {'cmd': ['/usr/bin/cmake', '/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/install/pkg_alpha'], 'cwd': '/home/blackjackdev/demos/ros2docker/build/pkg_alpha', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71303171'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/build/pkg_alpha'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing')]), 'shell': False}
+[0.071416] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'cmake'}
+[0.073340] (pkg_one) Command: {'cmd': ['/usr/bin/cmake', '/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/install/pkg_one'], 'cwd': '/home/blackjackdev/demos/ros2docker/build/pkg_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71303171'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/build/pkg_one'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing')]), 'shell': False}
+[0.100116] (-) TimerEvent: {}
+[0.154988] (pkg_alpha) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.4.0\n'}
+[0.162052] (pkg_one) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.4.0\n'}
+[0.186978] (ia_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.4.0\n'}
+[0.200207] (-) TimerEvent: {}
+[0.239107] (pkg_one) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.4.0\n'}
+[0.245068] (pkg_alpha) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.4.0\n'}
+[0.245798] (pkg_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.251407] (pkg_alpha) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.284545] (ia_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.4.0\n'}
+[0.294198] (ia_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.300273] (-) TimerEvent: {}
+[0.345017] (pkg_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.347503] (pkg_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.353755] (pkg_alpha) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.354330] (pkg_alpha) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.397163] (ia_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.397358] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400462] (-) TimerEvent: {}
+[0.445525] (pkg_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.458227] (pkg_one) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.488724] (pkg_alpha) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.497458] (pkg_alpha) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.500580] (-) TimerEvent: {}
+[0.521035] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.530815] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.601027] (-) TimerEvent: {}
+[0.701420] (-) TimerEvent: {}
+[0.766793] (pkg_one) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.774097] (pkg_alpha) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.775130] (pkg_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.777015] (pkg_alpha) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.801935] (-) TimerEvent: {}
+[0.824548] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.825282] (ia_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.887176] (pkg_alpha) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.887936] (pkg_alpha) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.892501] (pkg_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.893277] (pkg_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.902041] (-) TimerEvent: {}
+[0.935552] (ia_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.935727] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.002144] (-) TimerEvent: {}
+[1.017752] (pkg_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.029103] (pkg_alpha) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.031776] (pkg_one) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.038916] (pkg_alpha) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.042638] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.067395] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.102538] (-) TimerEvent: {}
+[1.203567] (-) TimerEvent: {}
+[1.304181] (-) TimerEvent: {}
+[1.404655] (-) TimerEvent: {}
+[1.505655] (-) TimerEvent: {}
+[1.514610] (pkg_alpha) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.516843] (pkg_alpha) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[1.532452] (pkg_one) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.535995] (pkg_one) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[1.565993] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.568140] (ia_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[1.569085] (pkg_alpha) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[1.569264] (pkg_alpha) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.577224] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[1.577466] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.606139] (-) TimerEvent: {}
+[1.606436] (ia_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[1.606669] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.706677] (-) TimerEvent: {}
+[1.807210] (-) TimerEvent: {}
+[1.865409] (pkg_alpha) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.889138] (pkg_alpha) StdoutLine: {'line': b'-- Found rclcpp: 0.7.7 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[1.907330] (-) TimerEvent: {}
+[1.914926] (ia_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.918390] (pkg_alpha) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[1.926314] (pkg_one) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.934911] (ia_msgs) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[1.945805] (pkg_one) StdoutLine: {'line': b'-- Found rclcpp: 0.7.7 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[1.957372] (ia_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[1.971244] (pkg_one) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[1.999307] (pkg_alpha) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[2.003132] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.007568] (-) TimerEvent: {}
+[2.031220] (ia_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[2.046062] (pkg_one) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[2.048340] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.107835] (-) TimerEvent: {}
+[2.114479] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.115368] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[2.141794] (ia_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[2.153814] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.154043] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[2.173684] (ia_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/dashing/include  \n'}
+[2.208346] (-) TimerEvent: {}
+[2.243199] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[2.243398] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.252078] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[2.252295] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.260576] (ia_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[2.308897] (-) TimerEvent: {}
+[2.329818] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.331598] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.334513] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.334956] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.404393] (ia_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") \n'}
+[2.409067] (-) TimerEvent: {}
+[2.429111] (pkg_one) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.429289] (pkg_one) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.448963] (pkg_alpha) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.450239] (pkg_alpha) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.474568] (pkg_one) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[2.485805] (pkg_one) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[2.504048] (pkg_alpha) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[2.510025] (-) TimerEvent: {}
+[2.513960] (pkg_alpha) StdoutLine: {'line': b'-- Found ia_msgs: 0.0.0 (/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake)\n'}
+[2.555622] (pkg_alpha) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[2.592021] (pkg_one) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[2.610469] (-) TimerEvent: {}
+[2.624000] (pkg_one) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/dashing/include  \n'}
+[2.664114] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[2.665336] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.665631] (pkg_alpha) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/include>\n'}
+[2.666541] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.667351] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.668396] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.669065] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.672417] (pkg_alpha) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.685995] (pkg_alpha) StdoutLine: {'line': b'-- Generating done\n'}
+[2.688611] (pkg_alpha) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/build/pkg_alpha\n'}
+[2.694627] (pkg_alpha) CommandEnded: {'returncode': 0}
+[2.695848] (pkg_alpha) JobProgress: {'identifier': 'pkg_alpha', 'progress': 'build'}
+[2.695901] (pkg_alpha) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/build/pkg_alpha', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/build/pkg_alpha', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71303171'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/build/pkg_alpha'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing')]), 'shell': False}
+[2.710508] (-) TimerEvent: {}
+[2.731529] (ia_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[2.748059] (pkg_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[2.777554] (pkg_alpha) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node_alpha\x1b[0m\n'}
+[2.784013] (ia_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[2.810620] (-) TimerEvent: {}
+[2.868562] (pkg_alpha) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o\x1b[0m\n'}
+[2.904857] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") \n'}
+[2.910859] (-) TimerEvent: {}
+[3.002201] (pkg_one) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[3.008285] (pkg_one) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[3.011046] (-) TimerEvent: {}
+[3.088251] (ia_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[3.111172] (-) TimerEvent: {}
+[3.135124] (ia_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[3.136347] (ia_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.7 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[3.154650] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[3.157127] (pkg_one) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.7 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[3.185216] (ia_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[3.185476] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.185580] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[3.185676] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[3.192433] (pkg_one) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[3.192692] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.192799] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[3.192894] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[3.211759] (-) TimerEvent: {}
+[3.223886] (pkg_one) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.227522] (ia_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.317111] (-) TimerEvent: {}
+[3.418089] (-) TimerEvent: {}
+[3.513720] (pkg_one) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[3.515521] (pkg_one) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.518214] (-) TimerEvent: {}
+[3.523204] (pkg_one) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/include>\n'}
+[3.524357] (pkg_one) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.525523] (pkg_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.530097] (pkg_one) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.540628] (pkg_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.550805] (ia_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.554293] (ia_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.575186] (ia_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.584486] (pkg_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.618361] (-) TimerEvent: {}
+[3.713993] (pkg_one) StdoutLine: {'line': b'-- Generating done\n'}
+[3.719069] (-) TimerEvent: {}
+[3.732727] (pkg_one) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/build/pkg_one\n'}
+[3.739979] (pkg_one) CommandEnded: {'returncode': 0}
+[3.741260] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'build'}
+[3.741319] (pkg_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/build/pkg_one', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/build/pkg_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71303171'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/build/pkg_one'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing')]), 'shell': False}
+[3.769216] (ia_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.781549] (ia_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/build/ia_msgs\n'}
+[3.793587] (ia_msgs) CommandEnded: {'returncode': 0}
+[3.794672] (ia_msgs) JobProgress: {'identifier': 'ia_msgs', 'progress': 'build'}
+[3.794721] (ia_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/build/ia_msgs', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/build/ia_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71303171'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/build/ia_msgs'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/opt/ros/dashing')]), 'shell': False}
+[3.819167] (-) TimerEvent: {}
+[3.842543] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node_one\x1b[0m\n'}
+[3.849551] (pkg_one) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.858209] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__cpp\x1b[0m\n'}
+[3.894107] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__cpp\x1b[0m\n'}
+[3.896215] (pkg_one) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.909558] (ia_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.919276] (-) TimerEvent: {}
+[3.937357] (pkg_one) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/node_one.dir/src/node_one.cpp.o\x1b[0m\n'}
+[3.957468] (ia_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.019393] (-) TimerEvent: {}
+[4.119857] (-) TimerEvent: {}
+[4.220457] (-) TimerEvent: {}
+[4.321102] (-) TimerEvent: {}
+[4.421427] (-) TimerEvent: {}
+[4.521971] (-) TimerEvent: {}
+[4.622495] (-) TimerEvent: {}
+[4.647527] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_generator_c\x1b[0m\n'}
+[4.702737] (pkg_one) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/pkg_one__rosidl_generator_c.dir/rosidl_generator_c/pkg_one/msg/my_msg__functions.c.o\x1b[0m\n'}
+[4.723031] (-) TimerEvent: {}
+[4.765464] (pkg_one) StdoutLine: {'line': b'[ 12%] Built target pkg_one__cpp\n'}
+[4.806374] (pkg_one) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.823226] (-) TimerEvent: {}
+[4.835148] (pkg_one) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.923585] (-) TimerEvent: {}
+[4.983198] (pkg_one) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libpkg_one__rosidl_generator_c.so\x1b[0m\n'}
+[5.023843] (-) TimerEvent: {}
+[5.120509] (ia_msgs) StdoutLine: {'line': b'[  4%] Built target ia_msgs__cpp\n'}
+[5.123890] (-) TimerEvent: {}
+[5.150251] (pkg_one) StdoutLine: {'line': b'[ 22%] Built target pkg_one__rosidl_generator_c\n'}
+[5.179341] (ia_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.189034] (ia_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.210701] (pkg_one) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.224193] (-) TimerEvent: {}
+[5.324726] (-) TimerEvent: {}
+[5.425259] (-) TimerEvent: {}
+[5.525777] (-) TimerEvent: {}
+[5.586699] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_generator_c\x1b[0m\n'}
+[5.626305] (-) TimerEvent: {}
+[5.685612] (ia_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/base_struct__functions.c.o\x1b[0m\n'}
+[5.687467] (ia_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/some_info__functions.c.o\x1b[0m\n'}
+[5.726844] (-) TimerEvent: {}
+[5.827357] (-) TimerEvent: {}
+[5.883298] (ia_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/new_msg__functions.c.o\x1b[0m\n'}
+[5.923745] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.927483] (-) TimerEvent: {}
+[5.956137] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.016014] (pkg_one) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pkg_one/msg/my_msg__type_support.cpp.o\x1b[0m\n'}
+[6.027935] (-) TimerEvent: {}
+[6.038104] (ia_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libia_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[6.047741] (pkg_one) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pkg_one/msg/dds_fastrtps/my_msg__type_support.cpp.o\x1b[0m\n'}
+[6.128524] (-) TimerEvent: {}
+[6.198152] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.215709] (ia_msgs) StdoutLine: {'line': b'[ 17%] Built target ia_msgs__rosidl_generator_c\n'}
+[6.229011] (-) TimerEvent: {}
+[6.277051] (pkg_one) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/pkg_one__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pkg_one/msg/my_msg__type_support.c.o\x1b[0m\n'}
+[6.318962] (ia_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.330003] (-) TimerEvent: {}
+[6.430531] (-) TimerEvent: {}
+[6.465622] (pkg_one) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking C shared library libpkg_one__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.530806] (-) TimerEvent: {}
+[6.631292] (-) TimerEvent: {}
+[6.654035] (pkg_one) StdoutLine: {'line': b'[ 38%] Built target pkg_one__rosidl_typesupport_introspection_c\n'}
+[6.710009] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[6.731437] (-) TimerEvent: {}
+[6.805731] (ia_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/base_struct__type_support.cpp.o\x1b[0m\n'}
+[6.806659] (ia_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/some_info__type_support.cpp.o\x1b[0m\n'}
+[6.831698] (-) TimerEvent: {}
+[6.932240] (-) TimerEvent: {}
+[7.016703] (ia_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/some_info__type_support.cpp.o] Interrupt\n'}
+[7.019057] (ia_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/base_struct__type_support.cpp.o] Interrupt\n'}
+[7.019224] (ia_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt\n'}
+[7.019324] (ia_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt\n'}
+[7.019419] (ia_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt\n'}
+[7.019537] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:147: recipe for target 'CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/some_info__type_support.cpp.o' failed\n"}
+[7.020063] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:123: recipe for target 'CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/base_struct__type_support.cpp.o' failed\n"}
+[7.020243] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:279: recipe for target 'CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend' failed\n"}
+[7.022557] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/Makefile2:487: recipe for target 'CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/all' failed\n"}
+[7.022829] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/Makefile2:406: recipe for target 'CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/all' failed\n"}
+[7.023059] (pkg_one) StderrLine: {'line': b'make[2]: *** [CMakeFiles/node_one.dir/src/node_one.cpp.o] Interrupt\n'}
+[7.023220] (pkg_one) StderrLine: {'line': b'make[1]: *** [CMakeFiles/node_one.dir/all] Interrupt\n'}
+[7.023459] (pkg_one) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pkg_one/msg/dds_fastrtps/my_msg__type_support.cpp.o] Interrupt\n'}
+[7.024369] (pkg_one) StderrLine: {'line': b'make[1]: *** [CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt\n'}
+[7.024786] (ia_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[7.025748] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 23, in <module>\n'}
+[7.025881] (ia_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[7.025978] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 19, in main\n'}
+[7.026693] (ia_msgs) StderrLine: {'line': b'    return generate_c(args.generator_arguments_file)\n'}
+[7.026809] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_typesupport_introspection_c/__init__.py", line 24, in generate_c\n'}
+[7.026906] (ia_msgs) StderrLine: {'line': b'    generate_files(generator_arguments_file, mapping)\n'}
+[7.026999] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files\n'}
+[7.027092] (ia_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[7.027183] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[7.027275] (ia_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[7.027395] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[7.027490] (ia_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[7.027582] (ia_msgs) StderrLine: {'line': b'  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string\n'}
+[7.027674] (ia_msgs) StderrLine: {'line': b"    _parser = Lark(grammar, start='specification')\n"}
+[7.027765] (ia_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 206, in __init__\n'}
+[7.027907] (ia_msgs) StderrLine: {'line': b'    self.terminals, self.rules, self.ignore_tokens = self.grammar.compile(self.options.start)\n'}
+[7.028003] (ia_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 553, in compile\n'}
+[7.028095] (ia_msgs) StderrLine: {'line': b'    used_rules = {s for r in compiled_rules\n'}
+[7.028187] (ia_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 556, in <setcomp>\n'}
+[7.028278] (ia_msgs) StderrLine: {'line': b'    and s != r.origin}\n'}
+[7.028397] (ia_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 19, in __hash__\n'}
+[7.028490] (ia_msgs) StderrLine: {'line': b'    return hash(self.name)\n'}
+[7.028582] (pkg_one) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pkg_one/msg/my_msg__type_support.cpp.o] Interrupt\n'}
+[7.028687] (pkg_one) StderrLine: {'line': b'make[1]: *** [CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/all] Interrupt\n'}
+[7.028781] (pkg_one) StderrLine: {'line': b'make: *** [all] Interrupt\n'}
+[7.028873] (pkg_alpha) StdoutLine: {'line': b"CMakeFiles/node_alpha.dir/build.make:62: recipe for target 'CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o' failed\n"}
+[7.028986] (pkg_alpha) StdoutLine: {'line': b"CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/node_alpha.dir/all' failed\n"}
+[7.029084] (pkg_alpha) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[7.029183] (pkg_one) StdoutLine: {'line': b"CMakeFiles/node_one.dir/build.make:62: recipe for target 'CMakeFiles/node_one.dir/src/node_one.cpp.o' failed\n"}
+[7.029309] (pkg_one) StdoutLine: {'line': b"CMakeFiles/Makefile2:331: recipe for target 'CMakeFiles/node_one.dir/all' failed\n"}
+[7.029409] (pkg_one) StdoutLine: {'line': b"CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/build.make:77: recipe for target 'CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pkg_one/msg/dds_fastrtps/my_msg__type_support.cpp.o' failed\n"}
+[7.029508] (pkg_one) StdoutLine: {'line': b"CMakeFiles/Makefile2:443: recipe for target 'CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/all' failed\n"}
+[7.029602] (pkg_one) StdoutLine: {'line': b"CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/build.make:77: recipe for target 'CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pkg_one/msg/my_msg__type_support.cpp.o' failed\n"}
+[7.029709] (pkg_one) StdoutLine: {'line': b"CMakeFiles/Makefile2:368: recipe for target 'CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/all' failed\n"}
+[7.030127] (pkg_one) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[7.030250] (ia_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[7.030361] (pkg_alpha) StderrLine: {'line': b'make[2]: *** [CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o] Interrupt\n'}
+[7.030470] (pkg_alpha) StderrLine: {'line': b'make[1]: *** [CMakeFiles/node_alpha.dir/all] Interrupt\n'}
+[7.030595] (pkg_alpha) StderrLine: {'line': b'make: *** [all] Interrupt\n'}
+[7.030691] (pkg_one) CommandEnded: {'returncode': -2}
+[7.031207] (pkg_one) JobEnded: {'identifier': 'pkg_one', 'rc': 'SIGINT'}
+[7.033303] (-) TimerEvent: {}
+[7.034861] (pkg_alpha) JobEnded: {'identifier': 'pkg_alpha', 'rc': 'SIGINT'}
+[7.067456] (ia_msgs) StderrLine: {'line': b'make[2]: *** [rosidl_typesupport_introspection_c/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_c.h] Error 1\n'}
+[7.067957] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/build.make:103: recipe for target 'rosidl_typesupport_introspection_c/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_c.h' failed\n"}
+[7.068109] (ia_msgs) StdoutLine: {'line': b"CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/all' failed\n"}
+[7.068228] (ia_msgs) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[7.068420] (ia_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt\n'}
+[7.068596] (ia_msgs) StderrLine: {'line': b'make: *** [all] Interrupt\n'}
+[7.069583] (ia_msgs) JobEnded: {'identifier': 'ia_msgs', 'rc': 'SIGINT'}
+[7.080984] (-) EventReactorShutdown: {}

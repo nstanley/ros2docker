@@ -1,0 +1,1 @@
+/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib/rosidl_typesupport_introspection_c/ros2sharedlib/msg/simple_struct__rosidl_typesupport_introspection_c.h

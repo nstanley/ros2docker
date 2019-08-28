@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.002200] (pkg_alpha) JobQueued: {'identifier': 'pkg_alpha', 'dependencies': OrderedDict()}
+[0.002253] (pkg_alpha) JobStarted: {'identifier': 'pkg_alpha'}
+[0.017766] (pkg_alpha) JobProgress: {'identifier': 'pkg_alpha', 'progress': 'cmake'}
+[0.021433] (pkg_alpha) JobProgress: {'identifier': 'pkg_alpha', 'progress': 'build'}
+[0.021493] (pkg_alpha) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1950'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install:/home/blackjackdev/demos/ros2cfa/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '65011715'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1968,unix/blackjackvm:/tmp/.ICE-unix/1968'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/home/blackjackdev/demos/ros2cfa/install/mms:/home/blackjackdev/demos/ros2cfa/install/cfm:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/home/blackjackdev/demos/ros2cfa/install/mms:/home/blackjackdev/demos/ros2cfa/install/cfm:/opt/ros/dashing')]), 'shell': False}
+[0.056822] (pkg_alpha) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[0.088583] (pkg_alpha) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.101192] (-) TimerEvent: {}
+[0.201692] (-) TimerEvent: {}
+[0.302180] (-) TimerEvent: {}
+[0.360647] (pkg_alpha) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.371917] (pkg_alpha) StdoutLine: {'line': b'-- Found rclcpp: 0.7.7 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[0.391770] (pkg_alpha) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[0.402729] (-) TimerEvent: {}
+[0.441030] (pkg_alpha) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[0.480395] (pkg_alpha) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[0.487882] (pkg_alpha) StdoutLine: {'line': b'-- Found ia_msgs: 0.0.0 (/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake)\n'}
+[0.503811] (-) TimerEvent: {}
+[0.524501] (pkg_alpha) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[0.604795] (-) TimerEvent: {}
+[0.619814] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[0.620849] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.621105] (pkg_alpha) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/include>\n'}
+[0.621875] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.622565] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.623461] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.624200] (pkg_alpha) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.630173] (pkg_alpha) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.648456] (pkg_alpha) StdoutLine: {'line': b'-- Generating done\n'}
+[0.651997] (pkg_alpha) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha\n'}
+[0.685199] (pkg_alpha) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node_alpha\x1b[0m\n'}
+[0.705276] (-) TimerEvent: {}
+[0.715156] (pkg_alpha) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o\x1b[0m\n'}
+[0.805908] (-) TimerEvent: {}
+[0.907546] (-) TimerEvent: {}
+[1.008550] (-) TimerEvent: {}
+[1.109615] (-) TimerEvent: {}
+[1.233729] (-) TimerEvent: {}
+[1.334170] (-) TimerEvent: {}
+[1.435133] (-) TimerEvent: {}
+[1.537626] (-) TimerEvent: {}
+[1.639635] (-) TimerEvent: {}
+[1.740172] (-) TimerEvent: {}
+[1.840883] (-) TimerEvent: {}
+[1.943142] (-) TimerEvent: {}
+[2.043683] (-) TimerEvent: {}
+[2.144203] (-) TimerEvent: {}
+[2.244730] (-) TimerEvent: {}
+[2.345284] (-) TimerEvent: {}
+[2.445800] (-) TimerEvent: {}
+[2.547279] (-) TimerEvent: {}
+[2.648827] (-) TimerEvent: {}
+[2.749379] (-) TimerEvent: {}
+[2.850829] (-) TimerEvent: {}
+[2.952360] (-) TimerEvent: {}
+[3.053790] (-) TimerEvent: {}
+[3.155484] (-) TimerEvent: {}
+[3.255854] (-) TimerEvent: {}
+[3.357510] (-) TimerEvent: {}
+[3.458865] (-) TimerEvent: {}
+[3.560398] (-) TimerEvent: {}
+[3.662858] (-) TimerEvent: {}
+[3.764360] (-) TimerEvent: {}
+[3.865309] (-) TimerEvent: {}
+[3.966364] (-) TimerEvent: {}
+[3.979122] (pkg_alpha) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node_alpha\x1b[0m\n'}
+[4.066851] (-) TimerEvent: {}
+[4.167437] (-) TimerEvent: {}
+[4.178976] (pkg_alpha) StdoutLine: {'line': b'[100%] Built target node_alpha\n'}
+[4.190891] (pkg_alpha) CommandEnded: {'returncode': 0}
+[4.216425] (pkg_alpha) JobProgress: {'identifier': 'pkg_alpha', 'progress': 'install'}
+[4.216559] (pkg_alpha) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha', '--target', 'install'], 'cwd': '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1950'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install:/home/blackjackdev/demos/ros2cfa/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '65011715'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1968,unix/blackjackvm:/tmp/.ICE-unix/1968'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/home/blackjackdev/demos/ros2cfa/install/mms:/home/blackjackdev/demos/ros2cfa/install/cfm:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs:/home/blackjackdev/demos/ros2cfa/install/mms:/home/blackjackdev/demos/ros2cfa/install/cfm:/opt/ros/dashing')]), 'shell': False}
+[4.267960] (-) TimerEvent: {}
+[4.277507] (pkg_alpha) StdoutLine: {'line': b'[100%] Built target node_alpha\n'}
+[4.297071] (pkg_alpha) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[4.307878] (pkg_alpha) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.308482] (pkg_alpha) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.308977] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/package_run_dependencies/pkg_alpha\n'}
+[4.309410] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/parent_prefix_path/pkg_alpha\n'}
+[4.309943] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/environment/ament_prefix_path.sh\n'}
+[4.310282] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/environment/path.sh\n'}
+[4.310707] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.bash\n'}
+[4.311150] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.sh\n'}
+[4.311582] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/local_setup.zsh\n'}
+[4.312003] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/ament_index/resource_index/packages/pkg_alpha\n'}
+[4.312377] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/cmake/pkg_alphaConfig.cmake\n'}
+[4.312693] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/cmake/pkg_alphaConfig-version.cmake\n'}
+[4.313116] (pkg_alpha) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/share/pkg_alpha/package.xml\n'}
+[4.315737] (pkg_alpha) StdoutLine: {'line': b'-- Installing: /home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/lib/pkg_alpha/node_alpha\n'}
+[4.316905] (pkg_alpha) StdoutLine: {'line': b'-- Set runtime path of "/home/blackjackdev/demos/ros2docker/pkg_alpha/install/pkg_alpha/lib/pkg_alpha/node_alpha" to ""\n'}
+[4.320757] (pkg_alpha) CommandEnded: {'returncode': 0}
+[4.337089] (pkg_alpha) JobEnded: {'identifier': 'pkg_alpha', 'rc': 0}
+[4.338041] (-) EventReactorShutdown: {}

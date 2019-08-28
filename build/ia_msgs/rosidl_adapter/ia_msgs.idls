@@ -1,0 +1,3 @@
+/home/blackjackdev/demos/ros2docker/build/ia_msgs/rosidl_adapter/ia_msgs:msg/BaseStruct.idl
+/home/blackjackdev/demos/ros2docker/build/ia_msgs/rosidl_adapter/ia_msgs:msg/SomeInfo.idl
+/home/blackjackdev/demos/ros2docker/build/ia_msgs/rosidl_adapter/ia_msgs:msg/NewMsg.idl

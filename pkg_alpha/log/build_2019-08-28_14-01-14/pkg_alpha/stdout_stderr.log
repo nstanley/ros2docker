@@ -1,0 +1,19 @@
+[35m[1mScanning dependencies of target node_alpha[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:[m[K In member function ‘[01m[Kvoid NodeAlpha::topic_callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:29:30:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KinfoInstance[m[K’
+     ia_msgs::msg::SomeInfo() [01;31m[KinfoInstance[m[K;
+                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[KinfoInstance[m[K’ was not declared in this scope
+     [01;31m[KinfoInstance[m[K.BaseStruct.id = 1;
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:30:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kinitstate[m[K’
+     [01;36m[KinfoInstance[m[K.BaseStruct.id = 1;
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Kinitstate[m[K
+CMakeFiles/node_alpha.dir/build.make:62: recipe for target 'CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o' failed
+make[2]: *** [CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o] Error 1
+make[1]: *** [CMakeFiles/node_alpha.dir/all] Error 2
+make: *** [all] Error 2
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/node_alpha.dir/all' failed
+Makefile:140: recipe for target 'all' failed

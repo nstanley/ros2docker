@@ -1,0 +1,243 @@
+[0.000000] (-) TimerEvent: {}
+[0.001533] (pkg_one) JobQueued: {'identifier': 'pkg_one', 'dependencies': OrderedDict()}
+[0.001819] (pkg_one) JobStarted: {'identifier': 'pkg_one'}
+[0.014717] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'cmake'}
+[0.019180] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'build'}
+[0.019425] (pkg_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1893'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '73400323'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1911,unix/blackjackvm:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.047749] (pkg_one) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[0.079451] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[0.079955] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099617] (-) TimerEvent: {}
+[0.200243] (-) TimerEvent: {}
+[0.301521] (-) TimerEvent: {}
+[0.342626] (pkg_one) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.350273] (pkg_one) StdoutLine: {'line': b'-- Found rclcpp: 0.7.7 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[0.368304] (pkg_one) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[0.403010] (-) TimerEvent: {}
+[0.418376] (pkg_one) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[0.458107] (pkg_one) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[0.465404] (pkg_one) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[0.503544] (-) TimerEvent: {}
+[0.591056] (pkg_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.6 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[0.604120] (-) TimerEvent: {}
+[0.704574] (-) TimerEvent: {}
+[0.704843] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") \n'}
+[0.804843] (-) TimerEvent: {}
+[0.810672] (pkg_one) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[0.818591] (pkg_one) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[0.906134] (-) TimerEvent: {}
+[0.962778] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[0.966446] (pkg_one) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.7 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[1.007089] (-) TimerEvent: {}
+[1.021684] (pkg_one) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[1.022100] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.022325] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[1.022642] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[1.048779] (pkg_one) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.108618] (-) TimerEvent: {}
+[1.209118] (-) TimerEvent: {}
+[1.241792] (pkg_one) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[1.243540] (pkg_one) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.246234] (pkg_one) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one/include>\n'}
+[1.309692] (-) TimerEvent: {}
+[1.411258] (-) TimerEvent: {}
+[1.512749] (-) TimerEvent: {}
+[1.575575] (pkg_one) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.578089] (pkg_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.579935] (pkg_one) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.581526] (pkg_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.596636] (pkg_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.613257] (-) TimerEvent: {}
+[1.713610] (-) TimerEvent: {}
+[1.721429] (pkg_one) StdoutLine: {'line': b'-- Generating done\n'}
+[1.728329] (pkg_one) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one\n'}
+[1.763337] (pkg_one) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.765126] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__cpp\x1b[0m\n'}
+[1.768370] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node_one\x1b[0m\n'}
+[1.780264] (pkg_one) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.801116] (pkg_one) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/node_one.dir/src/node_one.cpp.o\x1b[0m\n'}
+[1.813838] (-) TimerEvent: {}
+[1.914449] (-) TimerEvent: {}
+[2.014884] (-) TimerEvent: {}
+[2.115470] (-) TimerEvent: {}
+[2.216004] (-) TimerEvent: {}
+[2.306578] (pkg_one) StdoutLine: {'line': b'[  9%] Built target pkg_one__cpp\n'}
+[2.316139] (-) TimerEvent: {}
+[2.344347] (pkg_one) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.350121] (pkg_one) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.360357] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_generator_c\x1b[0m\n'}
+[2.420077] (-) TimerEvent: {}
+[2.420392] (pkg_one) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/pkg_one__rosidl_generator_c.dir/rosidl_generator_c/pkg_one/msg/my_msg__functions.c.o\x1b[0m\n'}
+[2.520547] (-) TimerEvent: {}
+[2.602379] (pkg_one) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libpkg_one__rosidl_generator_c.so\x1b[0m\n'}
+[2.620641] (-) TimerEvent: {}
+[2.721017] (-) TimerEvent: {}
+[2.760422] (pkg_one) StdoutLine: {'line': b'[ 22%] Built target pkg_one__rosidl_generator_c\n'}
+[2.819387] (pkg_one) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.821198] (-) TimerEvent: {}
+[2.830996] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.893875] (pkg_one) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pkg_one/msg/dds_fastrtps/my_msg__type_support.cpp.o\x1b[0m\n'}
+[2.905473] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.921724] (-) TimerEvent: {}
+[2.966929] (pkg_one) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pkg_one/msg/my_msg__type_support.cpp.o\x1b[0m\n'}
+[3.024257] (-) TimerEvent: {}
+[3.125207] (-) TimerEvent: {}
+[3.225753] (-) TimerEvent: {}
+[3.326264] (-) TimerEvent: {}
+[3.330436] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.370612] (pkg_one) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/pkg_one__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pkg_one/msg/my_msg__type_support.c.o\x1b[0m\n'}
+[3.426331] (-) TimerEvent: {}
+[3.429629] (pkg_one) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking C shared library libpkg_one__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.487857] (pkg_one) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libpkg_one__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.509469] (pkg_one) StdoutLine: {'line': b'[ 41%] Built target pkg_one__rosidl_typesupport_introspection_c\n'}
+[3.524169] (pkg_one) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libpkg_one__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.526530] (-) TimerEvent: {}
+[3.591403] (pkg_one) StdoutLine: {'line': b'[ 45%] Built target pkg_one__rosidl_typesupport_introspection_cpp\n'}
+[3.626875] (-) TimerEvent: {}
+[3.644916] (pkg_one) StdoutLine: {'line': b'[ 45%] Built target pkg_one__rosidl_typesupport_fastrtps_cpp\n'}
+[3.657946] (pkg_one) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.661891] (pkg_one) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.726933] (-) TimerEvent: {}
+[3.827448] (-) TimerEvent: {}
+[3.927989] (-) TimerEvent: {}
+[4.028506] (-) TimerEvent: {}
+[4.052881] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.083285] (pkg_one) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pkg_one/msg/my_msg__type_support.cpp.o\x1b[0m\n'}
+[4.096585] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.129516] (-) TimerEvent: {}
+[4.141225] (pkg_one) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pkg_one/msg/my_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.229578] (-) TimerEvent: {}
+[4.337428] (-) TimerEvent: {}
+[4.437959] (-) TimerEvent: {}
+[4.538473] (-) TimerEvent: {}
+[4.611615] (pkg_one) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libpkg_one__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.621552] (pkg_one) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libpkg_one__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.638998] (-) TimerEvent: {}
+[4.739520] (-) TimerEvent: {}
+[4.741561] (pkg_one) StdoutLine: {'line': b'[ 64%] Built target pkg_one__rosidl_typesupport_cpp\n'}
+[4.747023] (pkg_one) StdoutLine: {'line': b'[ 64%] Built target pkg_one__rosidl_typesupport_fastrtps_c\n'}
+[4.760108] (pkg_one) StdoutLine: {'line': b'[ 67%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.839866] (-) TimerEvent: {}
+[4.940297] (-) TimerEvent: {}
+[5.040909] (-) TimerEvent: {}
+[5.135880] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_c\x1b[0m\n'}
+[5.141053] (-) TimerEvent: {}
+[5.152036] (pkg_one) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/pkg_one__rosidl_typesupport_c.dir/rosidl_typesupport_c/pkg_one/msg/my_msg__type_support.cpp.o\x1b[0m\n'}
+[5.191741] (pkg_one) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libpkg_one__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.241986] (-) TimerEvent: {}
+[5.265868] (pkg_one) StdoutLine: {'line': b'[ 74%] Built target pkg_one__rosidl_typesupport_c\n'}
+[5.280985] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one\x1b[0m\n'}
+[5.296340] (pkg_one) StdoutLine: {'line': b'[ 74%] Built target pkg_one\n'}
+[5.312078] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__py\x1b[0m\n'}
+[5.328514] (pkg_one) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.342203] (-) TimerEvent: {}
+[5.442768] (-) TimerEvent: {}
+[5.543304] (-) TimerEvent: {}
+[5.644395] (-) TimerEvent: {}
+[5.745295] (-) TimerEvent: {}
+[5.779142] (pkg_one) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable node_one\x1b[0m\n'}
+[5.845339] (-) TimerEvent: {}
+[5.946213] (-) TimerEvent: {}
+[6.013435] (pkg_one) StdoutLine: {'line': b'[ 80%] Built target node_one\n'}
+[6.040841] (pkg_one) StdoutLine: {'line': b'[ 80%] Built target pkg_one__py\n'}
+[6.046387] (-) TimerEvent: {}
+[6.052584] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__python\x1b[0m\n'}
+[6.104446] (pkg_one) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/pkg_one__python.dir/rosidl_generator_py/pkg_one/msg/_my_msg_s.c.o\x1b[0m\n'}
+[6.146437] (-) TimerEvent: {}
+[6.228599] (pkg_one) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pkg_one/libpkg_one__python.so\x1b[0m\n'}
+[6.246541] (-) TimerEvent: {}
+[6.298983] (pkg_one) StdoutLine: {'line': b'[ 87%] Built target pkg_one__python\n'}
+[6.314773] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.315650] (pkg_one) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pkg_one__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.345369] (pkg_one) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/pkg_one__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pkg_one/_pkg_one_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.345711] (pkg_one) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/pkg_one__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pkg_one/_pkg_one_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.346584] (-) TimerEvent: {}
+[6.441774] (pkg_one) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pkg_one/pkg_one_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.447093] (-) TimerEvent: {}
+[6.447484] (pkg_one) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pkg_one/pkg_one_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.505001] (pkg_one) StdoutLine: {'line': b'[100%] Built target pkg_one__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.515072] (pkg_one) StdoutLine: {'line': b'[100%] Built target pkg_one__rosidl_typesupport_c__pyext\n'}
+[6.530320] (pkg_one) CommandEnded: {'returncode': 0}
+[6.547317] (-) TimerEvent: {}
+[6.585966] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'install'}
+[6.586185] (pkg_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', '--target', 'install'], 'cwd': '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1893'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '73400323'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1911,unix/blackjackvm:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[6.647657] (-) TimerEvent: {}
+[6.652941] (pkg_one) StdoutLine: {'line': b'[  3%] Built target pkg_one__cpp\n'}
+[6.681699] (pkg_one) StdoutLine: {'line': b'[ 12%] Built target pkg_one__rosidl_typesupport_fastrtps_cpp\n'}
+[6.705572] (pkg_one) StdoutLine: {'line': b'[ 22%] Built target pkg_one__rosidl_generator_c\n'}
+[6.742819] (pkg_one) StdoutLine: {'line': b'[ 32%] Built target pkg_one__rosidl_typesupport_fastrtps_c\n'}
+[6.747955] (-) TimerEvent: {}
+[6.773375] (pkg_one) StdoutLine: {'line': b'[ 41%] Built target pkg_one__rosidl_typesupport_c\n'}
+[6.798475] (pkg_one) StdoutLine: {'line': b'[ 51%] Built target pkg_one__rosidl_typesupport_introspection_c\n'}
+[6.823470] (pkg_one) StdoutLine: {'line': b'[ 61%] Built target pkg_one__rosidl_typesupport_introspection_cpp\n'}
+[6.848243] (-) TimerEvent: {}
+[6.852959] (pkg_one) StdoutLine: {'line': b'[ 70%] Built target pkg_one__rosidl_typesupport_cpp\n'}
+[6.875822] (pkg_one) StdoutLine: {'line': b'[ 70%] Built target pkg_one\n'}
+[6.898878] (pkg_one) StdoutLine: {'line': b'[ 74%] Built target pkg_one__py\n'}
+[6.928774] (pkg_one) StdoutLine: {'line': b'[ 80%] Built target pkg_one__python\n'}
+[6.948317] (-) TimerEvent: {}
+[6.958655] (pkg_one) StdoutLine: {'line': b'[ 87%] Built target pkg_one__rosidl_typesupport_c__pyext\n'}
+[6.986358] (pkg_one) StdoutLine: {'line': b'[ 93%] Built target node_one\n'}
+[7.014736] (pkg_one) StdoutLine: {'line': b'[100%] Built target pkg_one__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.037129] (pkg_one) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[7.047830] (pkg_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.048359] (-) TimerEvent: {}
+[7.050247] (pkg_one) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.051994] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/ament_index/resource_index/rosidl_interfaces/pkg_one\n'}
+[7.067205] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg.hpp\n'}
+[7.078105] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__struct.hpp\n'}
+[7.090052] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__traits.hpp\n'}
+[7.101790] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg.h\n'}
+[7.113849] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__functions.h\n'}
+[7.124994] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__struct.h\n'}
+[7.137108] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__type_support.h\n'}
+[7.148206] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.148453] (-) TimerEvent: {}
+[7.160177] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/environment/library_path.sh\n'}
+[7.172090] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_generator_c.so\n'}
+[7.184343] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_typesupport_c.so\n'}
+[7.196102] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_typesupport_cpp.so\n'}
+[7.208144] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__rosidl_typesupport_introspection_c.h\n'}
+[7.220501] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.232395] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_typesupport_introspection_c.so\n'}
+[7.246447] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.248622] (-) TimerEvent: {}
+[7.256191] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_typesupport_introspection_cpp.so\n'}
+[7.266285] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[7.276043] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.285673] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_typesupport_fastrtps_c.so\n'}
+[7.295848] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/my_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.305473] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/include/pkg_one/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.315605] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.325714] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/environment/pythonpath.sh\n'}
+[7.335679] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages/pkg_one/__init__.py\n'}
+[7.345937] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages/pkg_one/msg/__init__.py\n'}
+[7.348778] (-) TimerEvent: {}
+[7.355320] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages/pkg_one/msg/_my_msg.py\n'}
+[7.365356] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages/pkg_one/pkg_one_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[7.377599] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages/pkg_one/pkg_one_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[7.387106] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/libpkg_one__python.so\n'}
+[7.399141] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/msg/MyMsg.idl\n'}
+[7.409097] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/msg/MyMsg.msg\n'}
+[7.420916] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/ament_index/resource_index/package_run_dependencies/pkg_one\n'}
+[7.421229] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/ament_index/resource_index/parent_prefix_path/pkg_one\n'}
+[7.421669] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/environment/ament_prefix_path.sh\n'}
+[7.422034] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/environment/path.sh\n'}
+[7.422376] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/local_setup.bash\n'}
+[7.422752] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/local_setup.sh\n'}
+[7.423098] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/local_setup.zsh\n'}
+[7.423471] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/ament_index/resource_index/packages/pkg_one\n'}
+[7.423734] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/cmake/rosidl_cmake-extras.cmake\n'}
+[7.433735] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.445618] (pkg_one) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.449100] (-) TimerEvent: {}
+[7.455065] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/cmake/pkg_oneConfig.cmake\n'}
+[7.455360] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/cmake/pkg_oneConfig-version.cmake\n'}
+[7.455625] (pkg_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/share/pkg_one/package.xml\n'}
+[7.455851] (pkg_one) StdoutLine: {'line': b'-- Installing: /home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/pkg_one/node_one\n'}
+[7.457032] (pkg_one) StdoutLine: {'line': b'-- Set runtime path of "/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/pkg_one/node_one" to ""\n'}
+[7.512256] (pkg_one) StdoutLine: {'line': b"Compiling '/home/blackjackdev/demos/ros2docker/pkg_one/install/pkg_one/lib/python3.6/site-packages/pkg_one/__init__.py'...\n"}
+[7.524643] (pkg_one) CommandEnded: {'returncode': 0}
+[7.550221] (-) TimerEvent: {}
+[7.556788] (pkg_one) JobEnded: {'identifier': 'pkg_one', 'rc': 0}
+[7.558214] (-) EventReactorShutdown: {}

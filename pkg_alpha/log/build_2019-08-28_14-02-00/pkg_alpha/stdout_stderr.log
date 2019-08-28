@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target node_alpha[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o[0m
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:[m[K In member function ‘[01m[Kvoid NodeAlpha::topic_callback(std_msgs::msg::UInt32_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/blackjackdev/demos/ros2docker/pkg_alpha/src/pkg_alpha/src/node_alpha.cpp:30:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SomeInfo = struct ia_msgs::msg::SomeInfo_<std::allocator<void> > {aka struct ia_msgs::msg::SomeInfo_<std::allocator<void> >}[m[K’ has no member named ‘[01m[KBaseStruct[m[K’
+     infoInstance.[01;31m[KBaseStruct[m[K.id = 1;
+                  [01;31m[K^~~~~~~~~~[m[K
+CMakeFiles/node_alpha.dir/build.make:62: recipe for target 'CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o' failed
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/node_alpha.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make[2]: *** [CMakeFiles/node_alpha.dir/src/node_alpha.cpp.o] Error 1
+make[1]: *** [CMakeFiles/node_alpha.dir/all] Error 2
+make: *** [all] Error 2

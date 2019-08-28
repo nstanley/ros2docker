@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ia_msgs/msg/YetAnother.msg
+// generated code does not contain a copyright notice
+
+
+module ia_msgs {
+  module msg {
+    struct YetAnother {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

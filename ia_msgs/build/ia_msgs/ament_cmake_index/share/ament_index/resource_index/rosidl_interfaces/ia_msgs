@@ -1,0 +1,10 @@
+msg/BaseStruct.idl
+msg/BaseStruct.msg
+msg/NewMsg.idl
+msg/NewMsg.msg
+msg/SomeInfo.idl
+msg/SomeInfo.msg
+msg/TryAgain.idl
+msg/TryAgain.msg
+msg/YetAnother.idl
+msg/YetAnother.msg

@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  alpha:
+    image: ros2docker:latest
+    #command: git clone https://github.com/nstanley/ros2docker
+    #command: cd ros2docker/pkg_alpha
+    #command: colcon build --symlink-install
+    command: . ~/ros2docker/pkg_alpha/install/setup.bash
+    #command: ros2 run pkg_alpha node_alpha
+  one:
+    image: ros2docker:latest
+    #command: git clone https://github.com/nstanley/ros2docker
+    command: . ~/ros2docker/pkg_one/install/setup.bash
+    #command: ros2 run pkg_one node_one
+    depends_on:
+      - alpha

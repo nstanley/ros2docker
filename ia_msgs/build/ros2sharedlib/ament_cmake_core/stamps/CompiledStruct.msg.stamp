@@ -1,0 +1,2 @@
+SimpleStruct ss
+AnotherStruct as

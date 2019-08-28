@@ -1,0 +1,10 @@
+{
+  "package_name": "ia_msgs",
+  "non_idl_tuples": [
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs:msg/BaseStruct.msg",
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs:msg/SomeInfo.msg",
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs:msg/NewMsg.msg",
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs:msg/TryAgain.msg",
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs:msg/YetAnother.msg"
+  ]
+}

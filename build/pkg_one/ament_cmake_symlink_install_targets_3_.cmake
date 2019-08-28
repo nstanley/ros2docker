@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/blackjackdev/demos/ros2docker/build/pkg_one/libpkg_one__rosidl_typesupport_introspection_c.so" "TARGETS" "pkg_one__rosidl_typesupport_introspection_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

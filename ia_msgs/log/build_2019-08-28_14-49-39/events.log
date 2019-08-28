@@ -1,0 +1,724 @@
+[0.000000] (-) TimerEvent: {}
+[0.000883] (ia_msgs) JobQueued: {'identifier': 'ia_msgs', 'dependencies': OrderedDict()}
+[0.000935] (ros2sharedlib) JobQueued: {'identifier': 'ros2sharedlib', 'dependencies': OrderedDict()}
+[0.000973] (pkg_new) JobQueued: {'identifier': 'pkg_new', 'dependencies': OrderedDict([('ros2sharedlib', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib')])}
+[0.001012] (ros2sharedlib) JobStarted: {'identifier': 'ros2sharedlib'}
+[0.016865] (ia_msgs) JobStarted: {'identifier': 'ia_msgs'}
+[0.021492] (ros2sharedlib) JobProgress: {'identifier': 'ros2sharedlib', 'progress': 'cmake'}
+[0.022070] (ros2sharedlib) Command: {'cmd': ['/usr/bin/cmake', '/home/blackjackdev/demos/ros2docker/ia_msgs/src/ros2sharedlib', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.030045] (ia_msgs) JobProgress: {'identifier': 'ia_msgs', 'progress': 'cmake'}
+[0.030240] (ia_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.100029] (-) TimerEvent: {}
+[0.102260] (ros2sharedlib) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.4.0\n'}
+[0.117974] (ia_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.4.0\n'}
+[0.171666] (ros2sharedlib) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.4.0\n'}
+[0.176431] (ros2sharedlib) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.183594] (ia_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.4.0\n'}
+[0.187996] (ia_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.200320] (-) TimerEvent: {}
+[0.269364] (ros2sharedlib) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.269558] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.275412] (ia_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.276097] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300864] (-) TimerEvent: {}
+[0.351982] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.360211] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.363709] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.371529] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.401521] (-) TimerEvent: {}
+[0.502079] (-) TimerEvent: {}
+[0.602469] (-) TimerEvent: {}
+[0.621913] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.622105] (ros2sharedlib) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.645827] (ia_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.648722] (ia_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.703419] (-) TimerEvent: {}
+[0.713035] (ros2sharedlib) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.714074] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.744566] (ia_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.746011] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.803471] (-) TimerEvent: {}
+[0.825980] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.832036] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.845851] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.852637] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.903522] (-) TimerEvent: {}
+[1.003916] (-) TimerEvent: {}
+[1.104560] (-) TimerEvent: {}
+[1.205103] (-) TimerEvent: {}
+[1.255531] (ros2sharedlib) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.256980] (ia_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.257391] (ros2sharedlib) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[1.258874] (ia_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[1.291809] (ia_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[1.292012] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.301421] (ros2sharedlib) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[1.301594] (ros2sharedlib) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.305186] (-) TimerEvent: {}
+[1.405628] (-) TimerEvent: {}
+[1.506227] (-) TimerEvent: {}
+[1.560680] (ia_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.565639] (ros2sharedlib) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.580634] (ia_msgs) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[1.584142] (ros2sharedlib) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[1.598558] (ia_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[1.600686] (ros2sharedlib) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[1.606282] (-) TimerEvent: {}
+[1.656726] (ia_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[1.657888] (ros2sharedlib) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[1.706467] (-) TimerEvent: {}
+[1.730196] (ia_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[1.731470] (ros2sharedlib) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[1.756818] (ros2sharedlib) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/dashing/include  \n'}
+[1.757939] (ia_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/dashing/include  \n'}
+[1.806870] (-) TimerEvent: {}
+[1.831859] (ros2sharedlib) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[1.836572] (ia_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[1.906907] (-) TimerEvent: {}
+[1.960447] (ros2sharedlib) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") \n'}
+[1.971505] (ia_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") \n'}
+[2.007042] (-) TimerEvent: {}
+[2.107322] (-) TimerEvent: {}
+[2.207671] (-) TimerEvent: {}
+[2.207946] (ros2sharedlib) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[2.250807] (ros2sharedlib) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[2.288534] (ia_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[2.308134] (-) TimerEvent: {}
+[2.331826] (ia_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[2.408336] (-) TimerEvent: {}
+[2.508582] (-) TimerEvent: {}
+[2.539730] (ros2sharedlib) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[2.571648] (ros2sharedlib) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[2.572963] (ros2sharedlib) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.7 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[2.608803] (-) TimerEvent: {}
+[2.610323] (ia_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[2.610636] (ros2sharedlib) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[2.611172] (ros2sharedlib) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.611291] (ros2sharedlib) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[2.611394] (ros2sharedlib) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[2.642198] (ros2sharedlib) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.647069] (ia_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[2.648686] (ia_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.7 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[2.684035] (ia_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.8", minimum required is "3.5") \n'}
+[2.684329] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.684505] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[2.684605] (ia_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[2.709169] (-) TimerEvent: {}
+[2.718968] (ia_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.809289] (-) TimerEvent: {}
+[2.840488] (ros2sharedlib) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.842562] (ros2sharedlib) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.852892] (ros2sharedlib) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.909470] (-) TimerEvent: {}
+[2.940713] (ia_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.943327] (ia_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.954235] (ia_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.009594] (-) TimerEvent: {}
+[3.059972] (ros2sharedlib) StdoutLine: {'line': b'-- Generating done\n'}
+[3.066481] (ros2sharedlib) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib\n'}
+[3.071520] (ros2sharedlib) CommandEnded: {'returncode': 0}
+[3.072438] (ros2sharedlib) JobProgress: {'identifier': 'ros2sharedlib', 'progress': 'build'}
+[3.074873] (ros2sharedlib) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[3.109846] (-) TimerEvent: {}
+[3.137901] (ros2sharedlib) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.144779] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__cpp\x1b[0m\n'}
+[3.159090] (ros2sharedlib) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.178032] (ia_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.189147] (ia_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs\n'}
+[3.197396] (ia_msgs) CommandEnded: {'returncode': 0}
+[3.198298] (ia_msgs) JobProgress: {'identifier': 'ia_msgs', 'progress': 'build'}
+[3.200031] (ia_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[3.210325] (-) TimerEvent: {}
+[3.256933] (ia_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.257178] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__cpp\x1b[0m\n'}
+[3.270250] (ia_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.310368] (-) TimerEvent: {}
+[3.411033] (-) TimerEvent: {}
+[3.511384] (-) TimerEvent: {}
+[3.611908] (-) TimerEvent: {}
+[3.712234] (-) TimerEvent: {}
+[3.786691] (ros2sharedlib) StdoutLine: {'line': b'[  4%] Built target ia_msgs__cpp\n'}
+[3.803724] (ros2sharedlib) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.812983] (-) TimerEvent: {}
+[3.821115] (ros2sharedlib) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.913128] (-) TimerEvent: {}
+[4.013884] (-) TimerEvent: {}
+[4.098826] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_generator_c\x1b[0m\n'}
+[4.114014] (-) TimerEvent: {}
+[4.149215] (ros2sharedlib) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ros2sharedlib/msg/simple_struct__functions.c.o\x1b[0m\n'}
+[4.166820] (ros2sharedlib) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ros2sharedlib/msg/another_struct__functions.c.o\x1b[0m\n'}
+[4.214111] (-) TimerEvent: {}
+[4.314560] (-) TimerEvent: {}
+[4.348293] (ia_msgs) StdoutLine: {'line': b'[  3%] Built target ia_msgs__cpp\n'}
+[4.356835] (ros2sharedlib) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ros2sharedlib/msg/compiled_struct__functions.c.o\x1b[0m\n'}
+[4.376362] (ia_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.388218] (ia_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.414678] (-) TimerEvent: {}
+[4.499405] (ros2sharedlib) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libia_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.514760] (-) TimerEvent: {}
+[4.613715] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.614878] (-) TimerEvent: {}
+[4.690642] (ros2sharedlib) StdoutLine: {'line': b'[ 17%] Built target ia_msgs__rosidl_generator_c\n'}
+[4.700312] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.715300] (-) TimerEvent: {}
+[4.720632] (ros2sharedlib) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2sharedlib/msg/simple_struct__type_support.cpp.o\x1b[0m\n'}
+[4.723255] (ros2sharedlib) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2sharedlib/msg/another_struct__type_support.cpp.o\x1b[0m\n'}
+[4.733599] (ros2sharedlib) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2sharedlib/msg/compiled_struct__type_support.cpp.o\x1b[0m\n'}
+[4.771450] (ros2sharedlib) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2sharedlib/msg/dds_fastrtps/simple_struct__type_support.cpp.o\x1b[0m\n'}
+[4.815827] (-) TimerEvent: {}
+[4.916370] (-) TimerEvent: {}
+[5.015668] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_generator_c\x1b[0m\n'}
+[5.016477] (-) TimerEvent: {}
+[5.099423] (ia_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/base_struct__functions.c.o\x1b[0m\n'}
+[5.101224] (ia_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/some_info__functions.c.o\x1b[0m\n'}
+[5.116905] (-) TimerEvent: {}
+[5.217436] (-) TimerEvent: {}
+[5.288526] (ia_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/new_msg__functions.c.o\x1b[0m\n'}
+[5.317548] (-) TimerEvent: {}
+[5.371735] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.396825] (ros2sharedlib) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.405904] (ia_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/try_again__functions.c.o\x1b[0m\n'}
+[5.417141] (ia_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/yet_another__functions.c.o\x1b[0m\n'}
+[5.417774] (-) TimerEvent: {}
+[5.444909] (ia_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/base_struct__type_support.cpp.o\x1b[0m\n'}
+[5.447400] (ros2sharedlib) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2sharedlib/msg/dds_fastrtps/another_struct__type_support.cpp.o\x1b[0m\n'}
+[5.454868] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.503601] (ros2sharedlib) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.518071] (-) TimerEvent: {}
+[5.534830] (ia_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/some_info__type_support.cpp.o\x1b[0m\n'}
+[5.537309] (ia_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/base_struct__type_support.cpp.o\x1b[0m\n'}
+[5.558224] (ia_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libia_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.618579] (-) TimerEvent: {}
+[5.698118] (ros2sharedlib) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2sharedlib/msg/dds_fastrtps/compiled_struct__type_support.cpp.o\x1b[0m\n'}
+[5.718718] (-) TimerEvent: {}
+[5.781754] (ia_msgs) StdoutLine: {'line': b'[ 21%] Built target ia_msgs__rosidl_generator_c\n'}
+[5.781956] (ros2sharedlib) StdoutLine: {'line': b'[ 35%] Built target ia_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.819173] (-) TimerEvent: {}
+[5.840722] (ia_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/some_info__type_support.cpp.o\x1b[0m\n'}
+[5.919702] (-) TimerEvent: {}
+[6.020218] (-) TimerEvent: {}
+[6.031770] (ia_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/new_msg__type_support.cpp.o\x1b[0m\n'}
+[6.120759] (-) TimerEvent: {}
+[6.174777] (ia_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/try_again__type_support.cpp.o\x1b[0m\n'}
+[6.221291] (-) TimerEvent: {}
+[6.321810] (-) TimerEvent: {}
+[6.394984] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.422655] (-) TimerEvent: {}
+[6.457959] (ros2sharedlib) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2sharedlib/msg/another_struct__type_support.c.o\x1b[0m\n'}
+[6.460222] (ros2sharedlib) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2sharedlib/msg/simple_struct__type_support.c.o\x1b[0m\n'}
+[6.523336] (-) TimerEvent: {}
+[6.546303] (ros2sharedlib) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2sharedlib/msg/compiled_struct__type_support.c.o\x1b[0m\n'}
+[6.615685] (ia_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/new_msg__type_support.cpp.o\x1b[0m\n'}
+[6.623393] (-) TimerEvent: {}
+[6.683213] (ros2sharedlib) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking C shared library libia_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.723544] (-) TimerEvent: {}
+[6.734620] (ia_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/try_again__type_support.cpp.o\x1b[0m\n'}
+[6.738525] (ros2sharedlib) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.749894] (ia_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/yet_another__type_support.cpp.o\x1b[0m\n'}
+[6.823793] (-) TimerEvent: {}
+[6.828866] (ros2sharedlib) StdoutLine: {'line': b'[ 46%] Built target ia_msgs__rosidl_typesupport_introspection_c\n'}
+[6.881172] (ia_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.923943] (-) TimerEvent: {}
+[6.975290] (ros2sharedlib) StdoutLine: {'line': b'[ 46%] Built target ia_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.024519] (-) TimerEvent: {}
+[7.045035] (ros2sharedlib) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.053889] (ros2sharedlib) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.125051] (-) TimerEvent: {}
+[7.222702] (ia_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/yet_another__type_support.cpp.o\x1b[0m\n'}
+[7.225207] (-) TimerEvent: {}
+[7.326119] (-) TimerEvent: {}
+[7.426719] (-) TimerEvent: {}
+[7.462927] (ia_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.527153] (-) TimerEvent: {}
+[7.618295] (ia_msgs) StdoutLine: {'line': b'[ 36%] Built target ia_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.628422] (-) TimerEvent: {}
+[7.728823] (-) TimerEvent: {}
+[7.791997] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.828958] (-) TimerEvent: {}
+[7.898569] (ros2sharedlib) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2sharedlib/msg/another_struct__type_support.cpp.o\x1b[0m\n'}
+[7.903709] (ros2sharedlib) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2sharedlib/msg/simple_struct__type_support.cpp.o\x1b[0m\n'}
+[7.914937] (ros2sharedlib) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2sharedlib/msg/compiled_struct__type_support.cpp.o\x1b[0m\n'}
+[7.929297] (-) TimerEvent: {}
+[7.990666] (ia_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.029811] (-) TimerEvent: {}
+[8.089422] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[8.130530] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[8.130728] (-) TimerEvent: {}
+[8.160652] (ros2sharedlib) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2sharedlib/msg/simple_struct__type_support_c.cpp.o\x1b[0m\n'}
+[8.215377] (ia_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/some_info__type_support.c.o\x1b[0m\n'}
+[8.217876] (ia_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/new_msg__type_support.c.o\x1b[0m\n'}
+[8.221962] (ia_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/base_struct__type_support.c.o\x1b[0m\n'}
+[8.230649] (ia_msgs) StdoutLine: {'line': b'[ 42%] Built target ia_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[8.230827] (-) TimerEvent: {}
+[8.314462] (ia_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/try_again__type_support.c.o\x1b[0m\n'}
+[8.331388] (-) TimerEvent: {}
+[8.398380] (ia_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/yet_another__type_support.c.o\x1b[0m\n'}
+[8.409042] (ia_msgs) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.431652] (-) TimerEvent: {}
+[8.458606] (ia_msgs) StdoutLine: {'line': b'[ 49%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.498065] (ros2sharedlib) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2sharedlib/msg/another_struct__type_support_c.cpp.o\x1b[0m\n'}
+[8.531756] (-) TimerEvent: {}
+[8.539408] (ia_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libia_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.631870] (-) TimerEvent: {}
+[8.668707] (ia_msgs) StdoutLine: {'line': b'[ 50%] Built target ia_msgs__rosidl_typesupport_introspection_c\n'}
+[8.732526] (-) TimerEvent: {}
+[8.802624] (ros2sharedlib) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2sharedlib/msg/compiled_struct__type_support_c.cpp.o\x1b[0m\n'}
+[8.833047] (-) TimerEvent: {}
+[8.851723] (ros2sharedlib) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.933581] (-) TimerEvent: {}
+[9.034111] (-) TimerEvent: {}
+[9.090528] (ros2sharedlib) StdoutLine: {'line': b'[ 66%] Built target ia_msgs__rosidl_typesupport_cpp\n'}
+[9.135105] (-) TimerEvent: {}
+[9.235631] (-) TimerEvent: {}
+[9.335971] (-) TimerEvent: {}
+[9.340758] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[9.365636] (ia_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/base_struct__type_support.cpp.o\x1b[0m\n'}
+[9.386912] (ia_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/new_msg__type_support.cpp.o\x1b[0m\n'}
+[9.388625] (ia_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/some_info__type_support.cpp.o\x1b[0m\n'}
+[9.431503] (ros2sharedlib) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.436206] (-) TimerEvent: {}
+[9.536540] (-) TimerEvent: {}
+[9.637582] (-) TimerEvent: {}
+[9.650231] (ros2sharedlib) StdoutLine: {'line': b'[ 68%] Built target ia_msgs__rosidl_typesupport_fastrtps_c\n'}
+[9.682692] (ros2sharedlib) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.738334] (-) TimerEvent: {}
+[9.790712] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[9.838553] (-) TimerEvent: {}
+[9.902343] (ia_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/base_struct__type_support_c.cpp.o\x1b[0m\n'}
+[9.938852] (-) TimerEvent: {}
+[10.039750] (-) TimerEvent: {}
+[10.081890] (ia_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/try_again__type_support.cpp.o\x1b[0m\n'}
+[10.085155] (ia_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/yet_another__type_support.cpp.o\x1b[0m\n'}
+[10.139906] (-) TimerEvent: {}
+[10.194659] (ia_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/some_info__type_support_c.cpp.o\x1b[0m\n'}
+[10.240450] (-) TimerEvent: {}
+[10.241767] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[10.309392] (ros2sharedlib) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2sharedlib/msg/another_struct__type_support.cpp.o\x1b[0m\n'}
+[10.323265] (ros2sharedlib) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2sharedlib/msg/compiled_struct__type_support.cpp.o\x1b[0m\n'}
+[10.327831] (ros2sharedlib) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2sharedlib/msg/simple_struct__type_support.cpp.o\x1b[0m\n'}
+[10.340981] (-) TimerEvent: {}
+[10.441461] (-) TimerEvent: {}
+[10.493998] (ros2sharedlib) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.542044] (-) TimerEvent: {}
+[10.631169] (ia_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/new_msg__type_support_c.cpp.o\x1b[0m\n'}
+[10.643032] (-) TimerEvent: {}
+[10.707772] (ros2sharedlib) StdoutLine: {'line': b'[ 80%] Built target ia_msgs__rosidl_typesupport_c\n'}
+[10.725690] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs\x1b[0m\n'}
+[10.733411] (ia_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/try_again__type_support_c.cpp.o\x1b[0m\n'}
+[10.742036] (ia_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.743204] (-) TimerEvent: {}
+[10.756432] (ros2sharedlib) StdoutLine: {'line': b'[ 80%] Built target ia_msgs\n'}
+[10.779406] (ia_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/yet_another__type_support_c.cpp.o\x1b[0m\n'}
+[10.791938] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__py\x1b[0m\n'}
+[10.844083] (-) TimerEvent: {}
+[10.846430] (ros2sharedlib) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.944132] (-) TimerEvent: {}
+[10.958293] (ia_msgs) StdoutLine: {'line': b'[ 68%] Built target ia_msgs__rosidl_typesupport_cpp\n'}
+[11.044654] (-) TimerEvent: {}
+[11.145661] (-) TimerEvent: {}
+[11.246215] (-) TimerEvent: {}
+[11.347686] (-) TimerEvent: {}
+[11.367330] (ia_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.447795] (-) TimerEvent: {}
+[11.474369] (ia_msgs) StdoutLine: {'line': b'[ 70%] Built target ia_msgs__rosidl_typesupport_fastrtps_c\n'}
+[11.489392] (ia_msgs) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.547842] (-) TimerEvent: {}
+[11.648204] (-) TimerEvent: {}
+[11.748876] (-) TimerEvent: {}
+[11.849095] (-) TimerEvent: {}
+[11.942325] (ros2sharedlib) StdoutLine: {'line': b'[ 82%] Built target ia_msgs__py\n'}
+[11.949497] (-) TimerEvent: {}
+[11.957868] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__python\x1b[0m\n'}
+[12.001488] (ros2sharedlib) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ros2sharedlib/msg/_another_struct_s.c.o\x1b[0m\n'}
+[12.017572] (ros2sharedlib) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ros2sharedlib/msg/_simple_struct_s.c.o\x1b[0m\n'}
+[12.030537] (ros2sharedlib) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ros2sharedlib/msg/_compiled_struct_s.c.o\x1b[0m\n'}
+[12.049985] (-) TimerEvent: {}
+[12.120451] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[12.150110] (-) TimerEvent: {}
+[12.157619] (ia_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/base_struct__type_support.cpp.o\x1b[0m\n'}
+[12.164447] (ia_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/new_msg__type_support.cpp.o\x1b[0m\n'}
+[12.169447] (ia_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/some_info__type_support.cpp.o\x1b[0m\n'}
+[12.174853] (ia_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/try_again__type_support.cpp.o\x1b[0m\n'}
+[12.212387] (ros2sharedlib) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2sharedlib/libia_msgs__python.so\x1b[0m\n'}
+[12.223191] (ia_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/yet_another__type_support.cpp.o\x1b[0m\n'}
+[12.250504] (-) TimerEvent: {}
+[12.259898] (ia_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libia_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.294508] (ros2sharedlib) StdoutLine: {'line': b'[ 91%] Built target ia_msgs__python\n'}
+[12.308348] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros2sharedlib__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[12.309198] (ros2sharedlib) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros2sharedlib__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[12.347362] (ros2sharedlib) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/ros2sharedlib__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2sharedlib/_ros2sharedlib_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.350624] (-) TimerEvent: {}
+[12.352083] (ia_msgs) StdoutLine: {'line': b'[ 81%] Built target ia_msgs__rosidl_typesupport_c\n'}
+[12.372156] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs\x1b[0m\n'}
+[12.372330] (ros2sharedlib) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/ros2sharedlib__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2sharedlib/_ros2sharedlib_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.388231] (ia_msgs) StdoutLine: {'line': b'[ 81%] Built target ia_msgs\n'}
+[12.410603] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__py\x1b[0m\n'}
+[12.424893] (ia_msgs) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.451274] (-) TimerEvent: {}
+[12.459453] (ros2sharedlib) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2sharedlib/ros2sharedlib_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.491854] (ros2sharedlib) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2sharedlib/ros2sharedlib_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[12.538464] (ros2sharedlib) StdoutLine: {'line': b'[100%] Built target ros2sharedlib__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.551611] (-) TimerEvent: {}
+[12.588578] (ros2sharedlib) StdoutLine: {'line': b'[100%] Built target ros2sharedlib__rosidl_typesupport_c__pyext\n'}
+[12.604474] (ros2sharedlib) CommandEnded: {'returncode': 0}
+[12.651957] (-) TimerEvent: {}
+[12.691762] (ros2sharedlib) JobProgress: {'identifier': 'ros2sharedlib', 'progress': 'install'}
+[12.693505] (ros2sharedlib) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib', '--target', 'install'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ros2sharedlib'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[12.752175] (-) TimerEvent: {}
+[12.764364] (ros2sharedlib) StdoutLine: {'line': b'[ 11%] Built target ia_msgs__rosidl_generator_c\n'}
+[12.791890] (ros2sharedlib) StdoutLine: {'line': b'[ 22%] Built target ia_msgs__rosidl_typesupport_introspection_c\n'}
+[12.824589] (ros2sharedlib) StdoutLine: {'line': b'[ 24%] Built target ia_msgs__cpp\n'}
+[12.852704] (-) TimerEvent: {}
+[12.856156] (ros2sharedlib) StdoutLine: {'line': b'[ 35%] Built target ia_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.888281] (ros2sharedlib) StdoutLine: {'line': b'[ 46%] Built target ia_msgs__rosidl_typesupport_cpp\n'}
+[12.920409] (ros2sharedlib) StdoutLine: {'line': b'[ 57%] Built target ia_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.952927] (-) TimerEvent: {}
+[12.955848] (ros2sharedlib) StdoutLine: {'line': b'[ 68%] Built target ia_msgs__rosidl_typesupport_c\n'}
+[12.986727] (ros2sharedlib) StdoutLine: {'line': b'[ 80%] Built target ia_msgs__rosidl_typesupport_introspection_cpp\n'}
+[13.010038] (ros2sharedlib) StdoutLine: {'line': b'[ 80%] Built target ia_msgs\n'}
+[13.034302] (ros2sharedlib) StdoutLine: {'line': b'[ 82%] Built target ia_msgs__py\n'}
+[13.053324] (-) TimerEvent: {}
+[13.066501] (ros2sharedlib) StdoutLine: {'line': b'[ 91%] Built target ia_msgs__python\n'}
+[13.096620] (ros2sharedlib) StdoutLine: {'line': b'[ 95%] Built target ros2sharedlib__rosidl_typesupport_c__pyext\n'}
+[13.126477] (ros2sharedlib) StdoutLine: {'line': b'[100%] Built target ros2sharedlib__rosidl_typesupport_fastrtps_c__pyext\n'}
+[13.153779] (-) TimerEvent: {}
+[13.154011] (ros2sharedlib) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[13.164390] (ros2sharedlib) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.165469] (ros2sharedlib) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.167119] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ament_index/resource_index/rosidl_interfaces/ros2sharedlib\n'}
+[13.184081] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct.hpp\n'}
+[13.198842] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__struct.hpp\n'}
+[13.209962] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__traits.hpp\n'}
+[13.221763] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct.hpp\n'}
+[13.233619] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__struct.hpp\n'}
+[13.249692] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__traits.hpp\n'}
+[13.253820] (-) TimerEvent: {}
+[13.265333] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct.hpp\n'}
+[13.276635] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__struct.hpp\n'}
+[13.288113] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__traits.hpp\n'}
+[13.300166] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct.h\n'}
+[13.312673] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__functions.h\n'}
+[13.328427] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__struct.h\n'}
+[13.340232] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__type_support.h\n'}
+[13.353180] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct.h\n'}
+[13.354320] (-) TimerEvent: {}
+[13.363080] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__functions.h\n'}
+[13.372261] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__struct.h\n'}
+[13.390023] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__type_support.h\n'}
+[13.390609] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.400017] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct.h\n'}
+[13.408859] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__functions.h\n'}
+[13.419510] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__struct.h\n'}
+[13.430011] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__type_support.h\n'}
+[13.439155] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/environment/library_path.sh\n'}
+[13.452302] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_generator_c.so\n'}
+[13.454462] (-) TimerEvent: {}
+[13.462663] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_typesupport_c.so\n'}
+[13.475970] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_typesupport_cpp.so\n'}
+[13.482493] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__rosidl_typesupport_introspection_c.h\n'}
+[13.491653] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__rosidl_typesupport_introspection_c.h\n'}
+[13.500999] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.510258] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__rosidl_typesupport_introspection_c.h\n'}
+[13.519971] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_typesupport_introspection_c.so\n'}
+[13.530230] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.539712] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.549402] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.554619] (-) TimerEvent: {}
+[13.559224] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[13.571926] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__rosidl_typesupport_fastrtps_c.h\n'}
+[13.579827] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__rosidl_typesupport_fastrtps_c.h\n'}
+[13.589139] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.598773] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__rosidl_typesupport_fastrtps_c.h\n'}
+[13.608229] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[13.618537] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/another_struct__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.627788] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/compiled_struct__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.637628] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.647464] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/include/ros2sharedlib/msg/simple_struct__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.655002] (-) TimerEvent: {}
+[13.657216] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.666993] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/environment/pythonpath.sh\n'}
+[13.676354] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/__init__.py\n'}
+[13.686535] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/msg/__init__.py\n'}
+[13.696241] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/msg/_another_struct.py\n'}
+[13.706028] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/msg/_compiled_struct.py\n'}
+[13.716480] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/msg/_simple_struct.py\n'}
+[13.726442] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/ros2sharedlib_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[13.736379] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/ros2sharedlib_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[13.755326] (-) TimerEvent: {}
+[13.766554] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/libia_msgs__python.so\n'}
+[13.792009] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/msg/SimpleStruct.idl\n'}
+[13.796307] (ia_msgs) StdoutLine: {'line': b'[ 83%] Built target ia_msgs__py\n'}
+[13.802168] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/msg/AnotherStruct.idl\n'}
+[13.810432] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__python\x1b[0m\n'}
+[13.812223] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/msg/CompiledStruct.idl\n'}
+[13.821690] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/msg/SimpleStruct.msg\n'}
+[13.831769] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/msg/AnotherStruct.msg\n'}
+[13.841733] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/msg/CompiledStruct.msg\n'}
+[13.852018] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ament_index/resource_index/package_run_dependencies/ros2sharedlib\n'}
+[13.855554] (-) TimerEvent: {}
+[13.855859] (ia_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_base_struct_s.c.o\x1b[0m\n'}
+[13.865909] (ia_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_new_msg_s.c.o\x1b[0m\n'}
+[13.871094] (ia_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_try_again_s.c.o\x1b[0m\n'}
+[13.872780] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ament_index/resource_index/parent_prefix_path/ros2sharedlib\n'}
+[13.876690] (ia_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_some_info_s.c.o\x1b[0m\n'}
+[13.912626] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/environment/ament_prefix_path.sh\n'}
+[13.948856] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/environment/path.sh\n'}
+[13.956083] (-) TimerEvent: {}
+[13.978906] (ia_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_yet_another_s.c.o\x1b[0m\n'}
+[13.989765] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/local_setup.bash\n'}
+[14.019743] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/local_setup.sh\n'}
+[14.046288] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/local_setup.zsh\n'}
+[14.056621] (-) TimerEvent: {}
+[14.063526] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ament_index/resource_index/packages/ros2sharedlib\n'}
+[14.072920] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake/rosidl_cmake-extras.cmake\n'}
+[14.082742] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.092364] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.102354] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.110624] (ia_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ia_msgs/libia_msgs__python.so\x1b[0m\n'}
+[14.111731] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake/ros2sharedlibConfig.cmake\n'}
+[14.120728] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake/ros2sharedlibConfig-version.cmake\n'}
+[14.130746] (ros2sharedlib) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/package.xml\n'}
+[14.157133] (-) TimerEvent: {}
+[14.181630] (ros2sharedlib) StdoutLine: {'line': b"Compiling '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages/ros2sharedlib/__init__.py'...\n"}
+[14.189522] (ia_msgs) StdoutLine: {'line': b'[ 93%] Built target ia_msgs__python\n'}
+[14.191163] (ros2sharedlib) CommandEnded: {'returncode': 0}
+[14.203654] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[14.227065] (ros2sharedlib) JobEnded: {'identifier': 'ros2sharedlib', 'rc': 0}
+[14.227648] (pkg_new) JobStarted: {'identifier': 'pkg_new'}
+[14.227717] (ia_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ia_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[14.251701] (ia_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ia_msgs/_ia_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.252443] (pkg_new) JobProgress: {'identifier': 'pkg_new', 'progress': 'cmake'}
+[14.253983] (pkg_new) Command: {'cmd': ['/usr/bin/cmake', '/home/blackjackdev/demos/ros2docker/ia_msgs/src/pkg_new', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib:/opt/ros/dashing')]), 'shell': False}
+[14.257645] (-) TimerEvent: {}
+[14.276297] (ia_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ia_msgs/_ia_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.319226] (pkg_new) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.4.0\n'}
+[14.358199] (-) TimerEvent: {}
+[14.385297] (pkg_new) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.4.0\n'}
+[14.389672] (pkg_new) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[14.393682] (ia_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ia_msgs/ia_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.428844] (ia_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ia_msgs/ia_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.458249] (-) TimerEvent: {}
+[14.485133] (ia_msgs) StdoutLine: {'line': b'[100%] Built target ia_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.489605] (pkg_new) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[14.490408] (pkg_new) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[14.538265] (ia_msgs) StdoutLine: {'line': b'[100%] Built target ia_msgs__rosidl_typesupport_c__pyext\n'}
+[14.553283] (ia_msgs) CommandEnded: {'returncode': 0}
+[14.558757] (-) TimerEvent: {}
+[14.591631] (pkg_new) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.601799] (pkg_new) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.659008] (-) TimerEvent: {}
+[14.711437] (ia_msgs) JobProgress: {'identifier': 'ia_msgs', 'progress': 'install'}
+[14.713636] (ia_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs', '--target', 'install'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[14.759336] (-) TimerEvent: {}
+[14.782259] (ia_msgs) StdoutLine: {'line': b'[ 11%] Built target ia_msgs__rosidl_generator_c\n'}
+[14.813265] (ia_msgs) StdoutLine: {'line': b'[ 22%] Built target ia_msgs__rosidl_typesupport_introspection_c\n'}
+[14.841029] (ia_msgs) StdoutLine: {'line': b'[ 24%] Built target ia_msgs__cpp\n'}
+[14.859752] (-) TimerEvent: {}
+[14.865315] (pkg_new) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.868280] (pkg_new) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[14.895503] (ia_msgs) StdoutLine: {'line': b'[ 36%] Built target ia_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[14.927453] (ia_msgs) StdoutLine: {'line': b'[ 47%] Built target ia_msgs__rosidl_typesupport_cpp\n'}
+[14.958352] (ia_msgs) StdoutLine: {'line': b'[ 59%] Built target ia_msgs__rosidl_typesupport_fastrtps_c\n'}
+[14.959869] (-) TimerEvent: {}
+[14.970471] (pkg_new) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[14.970699] (pkg_new) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.991302] (ia_msgs) StdoutLine: {'line': b'[ 70%] Built target ia_msgs__rosidl_typesupport_c\n'}
+[15.019826] (ia_msgs) StdoutLine: {'line': b'[ 81%] Built target ia_msgs__rosidl_typesupport_introspection_cpp\n'}
+[15.046724] (ia_msgs) StdoutLine: {'line': b'[ 81%] Built target ia_msgs\n'}
+[15.060178] (-) TimerEvent: {}
+[15.074079] (ia_msgs) StdoutLine: {'line': b'[ 83%] Built target ia_msgs__py\n'}
+[15.080894] (pkg_new) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.084616] (pkg_new) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.118492] (ia_msgs) StdoutLine: {'line': b'[ 93%] Built target ia_msgs__python\n'}
+[15.150484] (ia_msgs) StdoutLine: {'line': b'[ 96%] Built target ia_msgs__rosidl_typesupport_c__pyext\n'}
+[15.160464] (-) TimerEvent: {}
+[15.193943] (ia_msgs) StdoutLine: {'line': b'[100%] Built target ia_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.230735] (ia_msgs) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[15.242034] (ia_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.243797] (ia_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.246032] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/rosidl_interfaces/ia_msgs\n'}
+[15.260604] (-) TimerEvent: {}
+[15.265925] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct.hpp\n'}
+[15.280434] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__struct.hpp\n'}
+[15.296515] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__traits.hpp\n'}
+[15.305879] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg.hpp\n'}
+[15.315255] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__struct.hpp\n'}
+[15.324531] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__traits.hpp\n'}
+[15.334266] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info.hpp\n'}
+[15.344064] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__struct.hpp\n'}
+[15.355276] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__traits.hpp\n'}
+[15.361015] (-) TimerEvent: {}
+[15.367104] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again.hpp\n'}
+[15.376327] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__struct.hpp\n'}
+[15.387541] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__traits.hpp\n'}
+[15.397002] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another.hpp\n'}
+[15.416293] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__struct.hpp\n'}
+[15.425789] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__traits.hpp\n'}
+[15.436218] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct.h\n'}
+[15.446121] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__functions.h\n'}
+[15.456270] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__struct.h\n'}
+[15.461365] (-) TimerEvent: {}
+[15.467282] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__type_support.h\n'}
+[15.476380] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg.h\n'}
+[15.486077] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__functions.h\n'}
+[15.495889] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__struct.h\n'}
+[15.505347] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__type_support.h\n'}
+[15.511661] (pkg_new) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.514153] (pkg_new) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[15.516010] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.525444] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info.h\n'}
+[15.535357] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__functions.h\n'}
+[15.544838] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__struct.h\n'}
+[15.549839] (pkg_new) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[15.551939] (pkg_new) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[15.554787] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__type_support.h\n'}
+[15.561537] (-) TimerEvent: {}
+[15.564254] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again.h\n'}
+[15.574192] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__functions.h\n'}
+[15.583688] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__struct.h\n'}
+[15.593280] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__type_support.h\n'}
+[15.602732] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another.h\n'}
+[15.612143] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__functions.h\n'}
+[15.621376] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__struct.h\n'}
+[15.631292] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__type_support.h\n'}
+[15.641122] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/library_path.sh\n'}
+[15.651847] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_generator_c.so\n'}
+[15.661395] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_c.so\n'}
+[15.661555] (-) TimerEvent: {}
+[15.671264] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_cpp.so\n'}
+[15.681572] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_c.h\n'}
+[15.691342] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.703072] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.715151] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_introspection_c.h\n'}
+[15.724282] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_introspection_c.h\n'}
+[15.733886] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_introspection_c.h\n'}
+[15.743833] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_introspection_c.so\n'}
+[15.755725] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.761682] (-) TimerEvent: {}
+[15.767258] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.776641] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.786297] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.796232] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.807147] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[15.817486] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_fastrtps_c.h\n'}
+[15.833919] (pkg_new) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[15.837783] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.845994] (pkg_new) StdoutLine: {'line': b'-- Found rclcpp: 0.7.7 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[15.852050] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.862237] (-) TimerEvent: {}
+[15.863430] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_fastrtps_c.h\n'}
+[15.871057] (pkg_new) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[15.874352] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_fastrtps_c.h\n'}
+[15.885525] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_fastrtps_c.h\n'}
+[15.897227] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[15.910208] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.919548] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.930678] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.932326] (pkg_new) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[15.934856] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.949916] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.961483] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.962402] (-) TimerEvent: {}
+[15.970888] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.982607] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.993056] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/pythonpath.sh\n'}
+[16.002705] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/__init__.py\n'}
+[16.021393] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/__init__.py\n'}
+[16.033777] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_base_struct.py\n'}
+[16.045884] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[16.046053] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[16.046177] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_new_msg.py\n'}
+[16.057799] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_some_info.py\n'}
+[16.062768] (-) TimerEvent: {}
+[16.072673] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_try_again.py\n'}
+[16.085661] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_yet_another.py\n'}
+[16.101706] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/ia_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[16.111425] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/ia_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[16.123324] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__python.so\n'}
+[16.132847] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/BaseStruct.idl\n'}
+[16.142391] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/SomeInfo.idl\n'}
+[16.150227] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[16.152500] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[16.152665] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/NewMsg.idl\n'}
+[16.162602] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/TryAgain.idl\n'}
+[16.162787] (-) TimerEvent: {}
+[16.172135] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/YetAnother.idl\n'}
+[16.182066] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/BaseStruct.msg\n'}
+[16.192446] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/SomeInfo.msg\n'}
+[16.202062] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/NewMsg.msg\n'}
+[16.212739] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/TryAgain.msg\n'}
+[16.223243] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/YetAnother.msg\n'}
+[16.235325] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/package_run_dependencies/ia_msgs\n'}
+[16.247002] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/parent_prefix_path/ia_msgs\n'}
+[16.260922] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/ament_prefix_path.sh\n'}
+[16.262911] (-) TimerEvent: {}
+[16.273827] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[16.274005] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[16.274155] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/path.sh\n'}
+[16.290492] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/local_setup.bash\n'}
+[16.300062] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/local_setup.sh\n'}
+[16.317904] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/local_setup.zsh\n'}
+[16.329575] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/packages/ia_msgs\n'}
+[16.346595] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.356227] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.363085] (-) TimerEvent: {}
+[16.366161] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.376131] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.385744] (pkg_new) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[16.385959] (pkg_new) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[16.386059] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ia_msgsConfig.cmake\n'}
+[16.395933] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ia_msgsConfig-version.cmake\n'}
+[16.405099] (ia_msgs) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/package.xml\n'}
+[16.438432] (pkg_new) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[16.447583] (pkg_new) StdoutLine: {'line': b'-- Found ros2sharedlib: 0.0.0 (/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/share/ros2sharedlib/cmake)\n'}
+[16.458049] (ia_msgs) StdoutLine: {'line': b"Compiling '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/__init__.py'...\n"}
+[16.463410] (-) TimerEvent: {}
+[16.468389] (ia_msgs) CommandEnded: {'returncode': 0}
+[16.479244] (ia_msgs) JobEnded: {'identifier': 'ia_msgs', 'rc': 0}
+[16.491601] (pkg_new) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[16.563943] (-) TimerEvent: {}
+[16.598162] (pkg_new) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[16.599696] (pkg_new) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[16.600165] (pkg_new) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/blackjackdev/demos/ros2docker/ia_msgs/src/pkg_new/include>\n'}
+[16.601441] (pkg_new) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[16.603551] (pkg_new) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.605672] (pkg_new) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[16.607615] (pkg_new) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.613896] (pkg_new) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.635685] (pkg_new) StdoutLine: {'line': b'-- Generating done\n'}
+[16.639873] (pkg_new) StdoutLine: {'line': b'-- Build files have been written to: /home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new\n'}
+[16.644578] (pkg_new) CommandEnded: {'returncode': 0}
+[16.645762] (pkg_new) JobProgress: {'identifier': 'pkg_new', 'progress': 'build'}
+[16.647464] (pkg_new) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib:/opt/ros/dashing')]), 'shell': False}
+[16.664512] (-) TimerEvent: {}
+[16.694894] (pkg_new) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target node_new\x1b[0m\n'}
+[16.708814] (pkg_new) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/node_new.dir/src/node_new.cpp.o\x1b[0m\n'}
+[16.744952] (pkg_new) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable node_new\x1b[0m\n'}
+[16.764558] (-) TimerEvent: {}
+[16.818752] (pkg_new) StdoutLine: {'line': b'[100%] Built target node_new\n'}
+[16.831438] (pkg_new) CommandEnded: {'returncode': 0}
+[16.857378] (pkg_new) JobProgress: {'identifier': 'pkg_new', 'progress': 'install'}
+[16.857570] (pkg_new) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new', '--target', 'install'], 'cwd': '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1888'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/src'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '71304296'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1917,unix/blackjackvm:/tmp/.ICE-unix/1917'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/ia_msgs/build/pkg_new'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ros2sharedlib:/opt/ros/dashing')]), 'shell': False}
+[16.865076] (-) TimerEvent: {}
+[16.918333] (pkg_new) StdoutLine: {'line': b'[100%] Built target node_new\n'}
+[16.939092] (pkg_new) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[16.949265] (pkg_new) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.950312] (pkg_new) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.951188] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/ament_index/resource_index/package_run_dependencies/pkg_new\n'}
+[16.960980] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/ament_index/resource_index/parent_prefix_path/pkg_new\n'}
+[16.965163] (-) TimerEvent: {}
+[16.971025] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/environment/ament_prefix_path.sh\n'}
+[16.982705] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/environment/path.sh\n'}
+[16.994272] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/local_setup.bash\n'}
+[17.005067] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/local_setup.sh\n'}
+[17.016539] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/local_setup.zsh\n'}
+[17.026947] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/ament_index/resource_index/packages/pkg_new\n'}
+[17.037298] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/cmake/pkg_newConfig.cmake\n'}
+[17.047761] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/cmake/pkg_newConfig-version.cmake\n'}
+[17.057679] (pkg_new) StdoutLine: {'line': b'-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/package.xml\n'}
+[17.065711] (-) TimerEvent: {}
+[17.067624] (pkg_new) StdoutLine: {'line': b'-- Installing: /home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/lib/pkg_new/node_new\n'}
+[17.068385] (pkg_new) StdoutLine: {'line': b'-- Set runtime path of "/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/lib/pkg_new/node_new" to ""\n'}
+[17.073402] (pkg_new) CommandEnded: {'returncode': 0}
+[17.080470] (pkg_new) JobEnded: {'identifier': 'pkg_new', 'rc': 0}
+[17.082958] (-) EventReactorShutdown: {}

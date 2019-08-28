@@ -214,7 +214,7 @@ PYTHON_VERSION:STRING=
 SITE:STRING=blackjackvm
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/dashing/lib/libstd_msgs__rosidl_typesupport_opensplice_cpp.so
+_lib:FILEPATH=/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/dashing/share/ament_cmake/cmake
@@ -305,6 +305,9 @@ ament_xmllint_BIN:FILEPATH=/opt/ros/dashing/bin/ament_xmllint
 
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/dashing/share/builtin_interfaces/cmake
+
+//The directory containing a CMake configuration file for ia_msgs.
+ia_msgs_DIR:PATH=/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake
 
 //Value Computed by CMake
 pkg_alpha_BINARY_DIR:STATIC=/home/blackjackdev/demos/ros2docker/pkg_alpha/build/pkg_alpha

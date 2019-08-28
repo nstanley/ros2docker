@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ia_msgs/msg/BaseStruct.msg
+// generated code does not contain a copyright notice
+
+
+module ia_msgs {
+  module msg {
+    struct BaseStruct {
+      uint32 id;
+
+      double info;
+    };
+  };
+};

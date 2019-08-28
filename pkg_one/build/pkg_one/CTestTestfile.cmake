@@ -16,3 +16,4 @@ add_test(uncrustify "/usr/bin/python3" "-u" "/opt/ros/dashing/share/ament_cmake_
 set_tests_properties(uncrustify PROPERTIES  LABELS "uncrustify;linter" TIMEOUT "60" WORKING_DIRECTORY "/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one")
 add_test(xmllint "/usr/bin/python3" "-u" "/opt/ros/dashing/share/ament_cmake_test/cmake/run_test.py" "/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/test_results/pkg_one/xmllint.xunit.xml" "--package-name" "pkg_one" "--output-file" "/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/ament_xmllint/xmllint.txt" "--command" "/opt/ros/dashing/bin/ament_xmllint" "--xunit-file" "/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/test_results/pkg_one/xmllint.xunit.xml")
 set_tests_properties(xmllint PROPERTIES  LABELS "xmllint;linter" TIMEOUT "60" WORKING_DIRECTORY "/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one")
+subdirs("pkg_one__py")

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/blackjackdev/demos/ros2docker/build/pkg_one/rosidl_generator_c/pkg_one/msg/my_msg__functions.c
+pkg_one/msg/my_msg__functions.h
+/home/blackjackdev/demos/ros2docker/build/pkg_one/rosidl_generator_c/pkg_one/msg/pkg_one/msg/my_msg__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
+/opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
+
+rosidl_generator_c/pkg_one/msg/my_msg__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_generator_c/visibility_control.h
+rosidl_generator_c/pkg_one/msg/rosidl_generator_c/visibility_control.h
+pkg_one/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/pkg_one/msg/pkg_one/msg/rosidl_generator_c__visibility_control.h
+pkg_one/msg/my_msg__struct.h
+rosidl_generator_c/pkg_one/msg/pkg_one/msg/my_msg__struct.h
+
+rosidl_generator_c/pkg_one/msg/my_msg__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/pkg_one/msg/rosidl_generator_c__visibility_control.h
+

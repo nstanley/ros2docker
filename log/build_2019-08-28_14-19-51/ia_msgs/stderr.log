@@ -1,0 +1,32 @@
+make[2]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/some_info__type_support.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/base_struct__type_support.cpp.o] Interrupt
+make[2]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend] Interrupt
+make[1]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+make[1]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+Traceback (most recent call last):
+  File "/opt/ros/dashing/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 23, in <module>
+    sys.exit(main())
+  File "/opt/ros/dashing/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 19, in main
+    return generate_c(args.generator_arguments_file)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_typesupport_introspection_c/__init__.py", line 24, in generate_c
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 70, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    _parser = Lark(grammar, start='specification')
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 206, in __init__
+    self.terminals, self.rules, self.ignore_tokens = self.grammar.compile(self.options.start)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 553, in compile
+    used_rules = {s for r in compiled_rules
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 556, in <setcomp>
+    and s != r.origin}
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 19, in __hash__
+    return hash(self.name)
+KeyboardInterrupt
+make[2]: *** [rosidl_typesupport_introspection_c/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_c.h] Error 1
+make[1]: *** [CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt
+make: *** [all] Interrupt

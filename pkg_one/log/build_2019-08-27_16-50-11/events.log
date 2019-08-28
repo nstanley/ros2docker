@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000768] (pkg_one) JobQueued: {'identifier': 'pkg_one', 'dependencies': OrderedDict()}
+[0.000924] (pkg_one) JobStarted: {'identifier': 'pkg_one'}
+[0.015067] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'cmake'}
+[0.016847] (pkg_one) JobProgress: {'identifier': 'pkg_one', 'progress': 'build'}
+[0.016967] (pkg_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', '--', '-j4', '-l4'], 'cwd': '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'blackjackdev'), ('LANGUAGE', 'en_US'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1893'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OLDPWD', '/home/blackjackdev/demos/ros2docker'), ('HOME', '/home/blackjackdev'), ('DESKTOP_SESSION', 'xubuntu'), ('ROS_PYTHON_VERSION', '3'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GLADE_MODULE_PATH', ':'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'blackjackdev'), ('WINDOWID', '73400323'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/blackjackdev/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('GDM_LANG', 'en_US'), ('GLADE_PIXMAP_PATH', ':'), ('SESSION_MANAGER', 'local/blackjackvm:@/tmp/.ICE-unix/1911,unix/blackjackvm:/tmp/.ICE-unix/1911'), ('XDG_MENU_PREFIX', 'xfce-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'xubuntu'), ('XAUTHORITY', '/home/blackjackdev/.Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GLADE_CATALOG_PATH', ':'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/blackjackdev'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one'), ('XDG_DATA_DIRS', '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.050710] (pkg_one) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[0.086294] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") \n'}
+[0.087306] (pkg_one) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.098039] (-) TimerEvent: {}
+[0.199056] (-) TimerEvent: {}
+[0.299787] (-) TimerEvent: {}
+[0.355724] (pkg_one) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.364567] (pkg_one) StdoutLine: {'line': b'-- Found rclcpp: 0.7.7 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[0.385671] (pkg_one) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[0.399822] (-) TimerEvent: {}
+[0.435833] (pkg_one) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[0.476437] (pkg_one) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[0.485564] (pkg_one) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[0.500015] (-) TimerEvent: {}
+[0.600986] (-) TimerEvent: {}
+[0.615600] (pkg_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.6 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[0.701391] (-) TimerEvent: {}
+[0.732529] (pkg_one) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") \n'}
+[0.802349] (-) TimerEvent: {}
+[0.881356] (pkg_one) StderrLine: {'line': b'CMake Error at /opt/ros/dashing/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[0.882159] (pkg_one) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name pkg_one\n'}
+[0.882417] (pkg_one) StderrLine: {'line': b'  --arguments-file\n'}
+[0.882682] (pkg_one) StderrLine: {'line': b'  /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/rosidl_adapter__arguments__demo.json\n'}
+[0.882866] (pkg_one) StderrLine: {'line': b'  --output-dir\n'}
+[0.883085] (pkg_one) StderrLine: {'line': b'  /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/rosidl_adapter/pkg_one\n'}
+[0.883732] (pkg_one) StderrLine: {'line': b'  --output-file\n'}
+[0.883944] (pkg_one) StderrLine: {'line': b'  /home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/rosidl_adapter/demo.idls)\n'}
+[0.884111] (pkg_one) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.884295] (pkg_one) StderrLine: {'line': b'\n'}
+[0.884457] (pkg_one) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.884616] (pkg_one) StderrLine: {'line': b'\n'}
+[0.884772] (pkg_one) StderrLine: {'line': b'    File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main\n'}
+[0.884933] (pkg_one) StderrLine: {'line': b'      "__main__", mod_spec)\n'}
+[0.885096] (pkg_one) StderrLine: {'line': b'    File "/usr/lib/python3.6/runpy.py", line 85, in _run_code\n'}
+[0.885317] (pkg_one) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[0.885476] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.885634] (pkg_one) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.885872] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/main.py", line 55, in main\n'}
+[0.886036] (pkg_one) StderrLine: {'line': b'      pathlib.Path(relative_path), output_dir)\n'}
+[0.886212] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__init__.py", line 20, in convert_to_idl\n'}
+[0.886381] (pkg_one) StderrLine: {'line': b"      package_dir, package_name, interface_file, output_dir / 'msg')\n"}
+[0.886536] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[0.886899] (pkg_one) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[0.887301] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 522, in parse_message_string\n'}
+[0.887537] (pkg_one) StderrLine: {'line': b'      msg = MessageSpecification(pkg_name, msg_name, fields, constants)\n'}
+[0.887701] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 373, in __init__\n'}
+[0.887858] (pkg_one) StderrLine: {'line': b'      pkg_name + PACKAGE_NAME_MESSAGE_TYPE_SEPARATOR + msg_name)\n'}
+[0.888017] (pkg_one) StderrLine: {'line': b'    File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 196, in __init__\n'}
+[0.888199] (pkg_one) StderrLine: {'line': b'      raise InvalidResourceName(self.type)\n'}
+[0.888358] (pkg_one) StderrLine: {'line': b'\n'}
+[0.888756] (pkg_one) StderrLine: {'line': b'  rosidl_adapter.parser.InvalidResourceName: demo\n'}
+[0.888924] (pkg_one) StderrLine: {'line': b'\n'}
+[0.889101] (pkg_one) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.889275] (pkg_one) StderrLine: {'line': b'  /opt/ros/dashing/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[0.890857] (pkg_one) StderrLine: {'line': b'  CMakeLists.txt:50 (rosidl_generate_interfaces)\n'}
+[0.891070] (pkg_one) StderrLine: {'line': b'\n'}
+[0.891276] (pkg_one) StderrLine: {'line': b'\n'}
+[0.891481] (pkg_one) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.891651] (pkg_one) StdoutLine: {'line': b'See also "/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/CMakeFiles/CMakeOutput.log".\n'}
+[0.891985] (pkg_one) StdoutLine: {'line': b'See also "/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one/CMakeFiles/CMakeError.log".\n'}
+[0.892223] (pkg_one) StdoutLine: {'line': b"Makefile:252: recipe for target 'cmake_check_build_system' failed\n"}
+[0.892668] (pkg_one) StderrLine: {'line': b'make: *** [cmake_check_build_system] Error 1\n'}
+[0.893070] (pkg_one) CommandEnded: {'returncode': 2}
+[0.893833] (pkg_one) JobEnded: {'identifier': 'pkg_one', 'rc': 2}
+[0.901719] (-) EventReactorShutdown: {}

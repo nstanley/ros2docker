@@ -19,6 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(ia_msgs REQUIRED)
 
 add_executable(node_alpha src/node_alpha.cpp)
 target_include_directories(node_alpha PUBLIC
@@ -28,6 +29,7 @@ ament_target_dependencies(
   node_alpha
   "rclcpp"
   "std_msgs"
+  "ia_msgs"
 )
 
 install(TARGETS node_alpha

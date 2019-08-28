@@ -204,8 +204,44 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a library.
+FastCDR_LIBRARY_DEBUG:FILEPATH=FastCDR_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+FastCDR_LIBRARY_RELEASE:FILEPATH=/opt/ros/dashing/lib/libfastcdr.so
+
+//Path to a file.
+FastRTPS_INCLUDE_DIR:PATH=/opt/ros/dashing/include
+
+//Path to a library.
+FastRTPS_LIBRARY_DEBUG:FILEPATH=FastRTPS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+FastRTPS_LIBRARY_RELEASE:FILEPATH=/opt/ros/dashing/lib/libfastrtps.so
+
+//Path to a library.
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
+
+//Path to a file.
+OPENSSL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
+
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=/usr/include/python3.6m
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython3.6m.so
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Specify specific Python version to use ('major.minor' or 'major')
 PYTHON_VERSION:STRING=
@@ -213,8 +249,11 @@ PYTHON_VERSION:STRING=
 //Name of the computer/site where compile is being run
 SITE:STRING=blackjackvm
 
+//The directory containing a CMake configuration file for TinyXML2.
+TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
+
 //Path to a library.
-_lib:FILEPATH=/opt/ros/dashing/lib/libstd_msgs__rosidl_typesupport_opensplice_cpp.so
+_lib:FILEPATH=/opt/ros/dashing/lib/librmw_fastrtps_shared_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/dashing/share/ament_cmake/cmake
@@ -306,11 +345,53 @@ ament_xmllint_BIN:FILEPATH=/opt/ros/dashing/bin/ament_xmllint
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/dashing/share/builtin_interfaces/cmake
 
+//The directory containing a CMake configuration file for fastcdr.
+fastcdr_DIR:PATH=/opt/ros/dashing/share/fastcdr/cmake
+
+//The directory containing a CMake configuration file for fastrtps.
+fastrtps_DIR:PATH=/opt/ros/dashing/share/fastrtps/cmake
+
+//The directory containing a CMake configuration file for fastrtps_cmake_module.
+fastrtps_cmake_module_DIR:PATH=/opt/ros/dashing/share/fastrtps_cmake_module/cmake
+
 //Value Computed by CMake
 pkg_one_BINARY_DIR:STATIC=/home/blackjackdev/demos/ros2docker/pkg_one/build/pkg_one
 
 //Value Computed by CMake
 pkg_one_SOURCE_DIR:STATIC=/home/blackjackdev/demos/ros2docker/pkg_one/src/pkg_one
+
+//Dependencies for the target
+pkg_one__python_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython3.6m.so;general;pkg_one__rosidl_typesupport_c;
+
+//Dependencies for the target
+pkg_one__rosidl_generator_c_LIB_DEPENDS:STATIC=general;/opt/ros/dashing/lib/librosidl_generator_c.so;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_c_LIB_DEPENDS:STATIC=general;pkg_one__rosidl_generator_c;general;pkg_one__rosidl_typesupport_fastrtps_c;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_c.so;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_c__pyext_LIB_DEPENDS:STATIC=general;pkg_one__python;general;/usr/lib/x86_64-linux-gnu/libpython3.6m.so;general;pkg_one__rosidl_typesupport_c;general;pkg_one__rosidl_typesupport_c;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_c.so;general;/opt/ros/dashing/lib/librcutils.so;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librmw.so;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_cpp_LIB_DEPENDS:STATIC=general;pkg_one__rosidl_typesupport_fastrtps_cpp;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_cpp.so;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_fastrtps_c_LIB_DEPENDS:STATIC=general;/opt/ros/dashing/lib/librcutils.so;general;/opt/ros/dashing/lib/librmw.so;general;/opt/ros/dashing/lib/librosidl_typesupport_fastrtps_cpp.so;general;/opt/ros/dashing/lib/librosidl_typesupport_fastrtps_c.so;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librcutils.so;general;/opt/ros/dashing/lib/librmw.so;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_fastrtps_cpp.so;general;/opt/ros/dashing/lib/librosidl_typesupport_fastrtps_c.so;general;pkg_one__rosidl_generator_c;general;pkg_one__rosidl_typesupport_fastrtps_cpp;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_fastrtps_c__pyext_LIB_DEPENDS:STATIC=general;pkg_one__python;general;/usr/lib/x86_64-linux-gnu/libpython3.6m.so;general;pkg_one__rosidl_typesupport_fastrtps_c;general;pkg_one__rosidl_typesupport_c;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_c.so;general;/opt/ros/dashing/lib/librcutils.so;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librmw.so;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_fastrtps_cpp_LIB_DEPENDS:STATIC=general;/opt/ros/dashing/lib/librcutils.so;general;/opt/ros/dashing/lib/librmw.so;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_fastrtps_cpp.so;general;fastrtps;general;fastcdr;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_introspection_c_LIB_DEPENDS:STATIC=general;pkg_one__rosidl_generator_c;general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_introspection_c.so;
+
+//Dependencies for the target
+pkg_one__rosidl_typesupport_introspection_cpp_LIB_DEPENDS:STATIC=general;/opt/ros/dashing/lib/librosidl_generator_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_introspection_c.so;general;/opt/ros/dashing/lib/librosidl_typesupport_introspection_cpp.so;
+
+//The directory containing a CMake configuration file for python_cmake_module.
+python_cmake_module_DIR:PATH=/opt/ros/dashing/share/python_cmake_module/cmake
 
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/dashing/share/rcl/cmake
@@ -327,11 +408,20 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/dashing/share/rcl_yaml_param_parser/cmak
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/dashing/share/rclcpp/cmake
 
+//The directory containing a CMake configuration file for rcpputils.
+rcpputils_DIR:PATH=/opt/ros/dashing/share/rcpputils/cmake
+
 //The directory containing a CMake configuration file for rcutils.
 rcutils_DIR:PATH=/opt/ros/dashing/share/rcutils/cmake
 
 //The directory containing a CMake configuration file for rmw.
 rmw_DIR:PATH=/opt/ros/dashing/share/rmw/cmake
+
+//The directory containing a CMake configuration file for rmw_fastrtps_cpp.
+rmw_fastrtps_cpp_DIR:PATH=/opt/ros/dashing/share/rmw_fastrtps_cpp/cmake
+
+//The directory containing a CMake configuration file for rmw_fastrtps_shared_cpp.
+rmw_fastrtps_shared_cpp_DIR:PATH=/opt/ros/dashing/share/rmw_fastrtps_shared_cpp/cmake
 
 //The directory containing a CMake configuration file for rmw_implementation.
 rmw_implementation_DIR:PATH=/opt/ros/dashing/share/rmw_implementation/cmake
@@ -348,6 +438,9 @@ rosidl_adapter_DIR:PATH=/opt/ros/dashing/share/rosidl_adapter/cmake
 //The directory containing a CMake configuration file for rosidl_cmake.
 rosidl_cmake_DIR:PATH=/opt/ros/dashing/share/rosidl_cmake/cmake
 
+//The directory containing a CMake configuration file for rosidl_default_generators.
+rosidl_default_generators_DIR:PATH=/opt/ros/dashing/share/rosidl_default_generators/cmake
+
 //The directory containing a CMake configuration file for rosidl_default_runtime.
 rosidl_default_runtime_DIR:PATH=/opt/ros/dashing/share/rosidl_default_runtime/cmake
 
@@ -357,11 +450,20 @@ rosidl_generator_c_DIR:PATH=/opt/ros/dashing/share/rosidl_generator_c/cmake
 //The directory containing a CMake configuration file for rosidl_generator_cpp.
 rosidl_generator_cpp_DIR:PATH=/opt/ros/dashing/share/rosidl_generator_cpp/cmake
 
+//The directory containing a CMake configuration file for rosidl_generator_py.
+rosidl_generator_py_DIR:PATH=/opt/ros/dashing/share/rosidl_generator_py/cmake
+
 //The directory containing a CMake configuration file for rosidl_typesupport_c.
 rosidl_typesupport_c_DIR:PATH=/opt/ros/dashing/share/rosidl_typesupport_c/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_cpp.
 rosidl_typesupport_cpp_DIR:PATH=/opt/ros/dashing/share/rosidl_typesupport_cpp/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_c.
+rosidl_typesupport_fastrtps_c_DIR:PATH=/opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/cmake
+
+//The directory containing a CMake configuration file for rosidl_typesupport_fastrtps_cpp.
+rosidl_typesupport_fastrtps_cpp_DIR:PATH=/opt/ros/dashing/share/rosidl_typesupport_fastrtps_cpp/cmake
 
 //The directory containing a CMake configuration file for rosidl_typesupport_interface.
 rosidl_typesupport_interface_DIR:PATH=/opt/ros/dashing/share/rosidl_typesupport_interface/cmake
@@ -485,7 +587,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -526,12 +628,79 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding FastRTPS
+FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/dashing/include][/opt/ros/dashing/lib/libfastrtps.so;/opt/ros/dashing/lib/libfastcdr.so][v()]
+//Details about finding OpenSSL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][v1.1.1()]
+//Details about finding PythonExtra
+FIND_PACKAGE_MESSAGE_DETAILS_PythonExtra:INTERNAL=[.so][/usr/include/python3.6m][/usr/lib/x86_64-linux-gnu/libpython3.6m.so][.cpython-36m-x86_64-linux-gnu][v()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.6.8(3)]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.6.8(3.5)]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.6m.so][/usr/include/python3.6m][v3.6.8(3.5)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
+OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_INCLUDE_DIR
+OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_SSL_LIBRARY
+OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//The directory for Python library installation. This needs to
+// be in PYTHONPATH when 'setup.py install' is called.
+PYTHON_INSTALL_DIR:INTERNAL=lib/python3.6/site-packages
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//The SOABI suffix for Python native extensions. See PEP-3149:
+// https://www.python.org/dev/peps/pep-3149/.
+PYTHON_SOABI:INTERNAL=cpython-36m-x86_64-linux-gnu
+//The full suffix for Python native extensions. See PEP-3149: https://www.python.org/dev/peps/pep-3149/.
+PythonExtra_EXTENSION_SUFFIX:INTERNAL=.cpython-36m-x86_64-linux-gnu
+_OPENSSL_CFLAGS:INTERNAL=
+_OPENSSL_CFLAGS_I:INTERNAL=
+_OPENSSL_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_FOUND:INTERNAL=1
+_OPENSSL_INCLUDEDIR:INTERNAL=/usr/include
+_OPENSSL_INCLUDE_DIRS:INTERNAL=
+_OPENSSL_LDFLAGS:INTERNAL=-lssl;-lcrypto
+_OPENSSL_LDFLAGS_OTHER:INTERNAL=
+_OPENSSL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+_OPENSSL_LIBRARIES:INTERNAL=ssl;crypto
+_OPENSSL_LIBRARY_DIRS:INTERNAL=
+_OPENSSL_LIBS:INTERNAL=
+_OPENSSL_LIBS_L:INTERNAL=
+_OPENSSL_LIBS_OTHER:INTERNAL=
+_OPENSSL_LIBS_PATHS:INTERNAL=
+_OPENSSL_PREFIX:INTERNAL=/usr
+_OPENSSL_STATIC_CFLAGS:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_I:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_STATIC_INCLUDE_DIRS:INTERNAL=
+_OPENSSL_STATIC_LDFLAGS:INTERNAL=-lssl;-lcrypto;-ldl;-pthread
+_OPENSSL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+_OPENSSL_STATIC_LIBDIR:INTERNAL=
+_OPENSSL_STATIC_LIBRARIES:INTERNAL=ssl;crypto;dl
+_OPENSSL_STATIC_LIBRARY_DIRS:INTERNAL=
+_OPENSSL_STATIC_LIBS:INTERNAL=
+_OPENSSL_STATIC_LIBS_L:INTERNAL=
+_OPENSSL_STATIC_LIBS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBS_PATHS:INTERNAL=
+_OPENSSL_VERSION:INTERNAL=1.1.1
+_OPENSSL_openssl_INCLUDEDIR:INTERNAL=
+_OPENSSL_openssl_LIBDIR:INTERNAL=
+_OPENSSL_openssl_PREFIX:INTERNAL=
+_OPENSSL_openssl_VERSION:INTERNAL=
 //Index for unique symlink install targets
-__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=0
+__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=10
+__pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
+__pkg_config_checked__OPENSSL:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

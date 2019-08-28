@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pkg_one/msg/MyMsg.msg
+// generated code does not contain a copyright notice
+
+
+module pkg_one {
+  module msg {
+    struct MyMsg {
+      int32 an_int;
+
+      uint32 a_uint;
+    };
+  };
+};

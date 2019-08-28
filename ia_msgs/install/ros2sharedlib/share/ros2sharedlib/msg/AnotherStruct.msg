@@ -1,0 +1,1 @@
+/home/blackjackdev/demos/ros2docker/ia_msgs/src/ros2sharedlib/msg/AnotherStruct.msg

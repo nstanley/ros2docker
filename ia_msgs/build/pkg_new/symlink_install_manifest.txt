@@ -1,0 +1,11 @@
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/ament_index/resource_index/package_run_dependencies/pkg_new
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/ament_index/resource_index/parent_prefix_path/pkg_new
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/environment/ament_prefix_path.sh
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/environment/path.sh
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/local_setup.bash
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/local_setup.sh
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/local_setup.zsh
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/ament_index/resource_index/packages/pkg_new
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/cmake/pkg_newConfig.cmake
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/cmake/pkg_newConfig-version.cmake
+/home/blackjackdev/demos/ros2docker/ia_msgs/install/pkg_new/share/pkg_new/package.xml

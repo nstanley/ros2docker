@@ -4,6 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/u_int32.hpp"
+#include "ia_msgs/msg/some_info.hpp"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -25,6 +26,8 @@ private:
   // The callback method when a 'sensor' message is received
   void topic_callback(const std_msgs::msg::UInt32::SharedPtr msg) const
   {
+    ia_msgs::msg::SomeInfo infoInstance;
+    infoInstance.core.id = 1;
     // Print what we found on the 'sensor' topic
     RCLCPP_INFO(this->get_logger(), "RX Sensor Data: '%d'", msg->data);
     // Calculate some result and send it back

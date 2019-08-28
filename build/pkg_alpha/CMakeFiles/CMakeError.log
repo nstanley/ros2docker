@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80fcc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80fcc.dir/build.make CMakeFiles/cmTC_80fcc.dir/build
+make[1]: Entering directory '/home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80fcc.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_80fcc.dir/CheckSymbolExists.c.o   -c /home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_80fcc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80fcc.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_80fcc.dir/CheckSymbolExists.c.o  -o cmTC_80fcc 
+CMakeFiles/cmTC_80fcc.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_80fcc.dir/build.make:97: recipe for target 'cmTC_80fcc' failed
+make[1]: *** [cmTC_80fcc] Error 1
+make[1]: Leaving directory '/home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_80fcc/fast' failed
+make: *** [cmTC_80fcc/fast] Error 2
+
+File /home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_faace/fast"
+/usr/bin/make -f CMakeFiles/cmTC_faace.dir/build.make CMakeFiles/cmTC_faace.dir/build
+make[1]: Entering directory '/home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_faace.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_faace.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_faace
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faace.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_faace.dir/CheckFunctionExists.c.o  -o cmTC_faace -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_faace.dir/build.make:97: recipe for target 'cmTC_faace' failed
+make[1]: *** [cmTC_faace] Error 1
+make[1]: Leaving directory '/home/blackjackdev/demos/ros2docker/build/pkg_alpha/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_faace/fast' failed
+make: *** [cmTC_faace/fast] Error 2
+
+

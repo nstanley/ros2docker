@@ -1,0 +1,8 @@
+{
+  "package_name": "ros2sharedlib",
+  "non_idl_tuples": [
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ros2sharedlib:msg/SimpleStruct.msg",
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ros2sharedlib:msg/AnotherStruct.msg",
+    "/home/blackjackdev/demos/ros2docker/ia_msgs/src/ros2sharedlib:msg/CompiledStruct.msg"
+  ]
+}

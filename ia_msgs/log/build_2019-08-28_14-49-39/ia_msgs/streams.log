@@ -1,0 +1,254 @@
+Invoking command in '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.7.3 (/opt/ros/dashing/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)
+-- Found rosidl_adapter: 0.7.5 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+-- Found FastRTPS: /opt/ros/dashing/include  
+-- Found ament_lint_auto: 0.7.8 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.8") 
+-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.5") 
+-- Found python_cmake_module: 0.7.7 (/opt/ros/dashing/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.8", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+-- Found PythonExtra: .so  
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs
+Invoked command in '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/blackjackdev/demos/ros2docker/ia_msgs/src/ia_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs
+Invoking command in '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs -- -j4 -l4
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target ia_msgs__cpp[0m
+[  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  3%] Built target ia_msgs__cpp
+[  4%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_generator_c[0m
+[  8%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/base_struct__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/some_info__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/new_msg__functions.c.o[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_cpp[0m
+[ 13%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/try_again__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_generator_c.dir/rosidl_generator_c/ia_msgs/msg/yet_another__functions.c.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/base_struct__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/some_info__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/base_struct__type_support.cpp.o[0m
+[ 21%] [32m[1mLinking C shared library libia_msgs__rosidl_generator_c.so[0m
+[ 21%] Built target ia_msgs__rosidl_generator_c
+[ 22%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/some_info__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/new_msg__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/try_again__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/new_msg__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/try_again__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ia_msgs/msg/yet_another__type_support.cpp.o[0m
+[ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ia_msgs/msg/dds_fastrtps/yet_another__type_support.cpp.o[0m
+[ 36%] [32m[1mLinking CXX shared library libia_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 36%] Built target ia_msgs__rosidl_typesupport_introspection_cpp
+[ 37%] [32m[1mLinking CXX shared library libia_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_introspection_c[0m
+[ 39%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/some_info__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/new_msg__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/base_struct__type_support.c.o[0m
+[ 42%] Built target ia_msgs__rosidl_typesupport_fastrtps_cpp
+[ 44%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/try_again__type_support.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ia_msgs/msg/yet_another__type_support.c.o[0m
+[ 47%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 49%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 50%] [32m[1mLinking C shared library libia_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 50%] Built target ia_msgs__rosidl_typesupport_introspection_c
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_cpp[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/base_struct__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/new_msg__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/some_info__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_c[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/base_struct__type_support_c.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/try_again__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ia_msgs/msg/yet_another__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/some_info__type_support_c.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/new_msg__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/try_again__type_support_c.cpp.o[0m
+[ 67%] [32m[1mLinking CXX shared library libia_msgs__rosidl_typesupport_cpp.so[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ia_msgs/msg/yet_another__type_support_c.cpp.o[0m
+[ 68%] Built target ia_msgs__rosidl_typesupport_cpp
+[ 70%] [32m[1mLinking CXX shared library libia_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 70%] Built target ia_msgs__rosidl_typesupport_fastrtps_c
+[ 72%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_c[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/base_struct__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/new_msg__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/some_info__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/try_again__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ia_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ia_msgs/msg/yet_another__type_support.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libia_msgs__rosidl_typesupport_c.so[0m
+[ 81%] Built target ia_msgs__rosidl_typesupport_c
+[35m[1mScanning dependencies of target ia_msgs[0m
+[ 81%] Built target ia_msgs
+[35m[1mScanning dependencies of target ia_msgs__py[0m
+[ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 83%] Built target ia_msgs__py
+[35m[1mScanning dependencies of target ia_msgs__python[0m
+[ 85%] [32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_base_struct_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_new_msg_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_try_again_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_some_info_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/ia_msgs__python.dir/rosidl_generator_py/ia_msgs/msg/_yet_another_s.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/ia_msgs/libia_msgs__python.so[0m
+[ 93%] Built target ia_msgs__python
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target ia_msgs__rosidl_typesupport_c__pyext[0m
+[ 95%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ia_msgs/_ia_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32mBuilding C object CMakeFiles/ia_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ia_msgs/_ia_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/ia_msgs/ia_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/ia_msgs/ia_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[100%] Built target ia_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target ia_msgs__rosidl_typesupport_c__pyext
+Invoked command in '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs -- -j4 -l4
+Invoking command in '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs --target install
+[ 11%] Built target ia_msgs__rosidl_generator_c
+[ 22%] Built target ia_msgs__rosidl_typesupport_introspection_c
+[ 24%] Built target ia_msgs__cpp
+[ 36%] Built target ia_msgs__rosidl_typesupport_fastrtps_cpp
+[ 47%] Built target ia_msgs__rosidl_typesupport_cpp
+[ 59%] Built target ia_msgs__rosidl_typesupport_fastrtps_c
+[ 70%] Built target ia_msgs__rosidl_typesupport_c
+[ 81%] Built target ia_msgs__rosidl_typesupport_introspection_cpp
+[ 81%] Built target ia_msgs
+[ 83%] Built target ia_msgs__py
+[ 93%] Built target ia_msgs__python
+[ 96%] Built target ia_msgs__rosidl_typesupport_c__pyext
+[100%] Built target ia_msgs__rosidl_typesupport_fastrtps_c__pyext
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/rosidl_interfaces/ia_msgs
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__struct.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__traits.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__struct.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__traits.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__struct.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__traits.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__struct.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__traits.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__struct.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__traits.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__functions.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__struct.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__type_support.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__functions.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__struct.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__type_support.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__functions.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__struct.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__type_support.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__functions.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__struct.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__type_support.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__functions.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__struct.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__type_support.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/library_path.sh
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_generator_c.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_c.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_cpp.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_introspection_cpp.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/base_struct__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/new_msg__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/some_info__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/try_again__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/include/ia_msgs/msg/yet_another__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/pythonpath.sh
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/__init__.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/__init__.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_base_struct.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_new_msg.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_some_info.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_try_again.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/msg/_yet_another.py
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/ia_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/ia_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/libia_msgs__python.so
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/BaseStruct.idl
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/SomeInfo.idl
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/NewMsg.idl
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/TryAgain.idl
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/YetAnother.idl
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/BaseStruct.msg
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/SomeInfo.msg
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/NewMsg.msg
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/TryAgain.msg
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/msg/YetAnother.msg
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/package_run_dependencies/ia_msgs
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/parent_prefix_path/ia_msgs
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/ament_prefix_path.sh
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/environment/path.sh
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/local_setup.bash
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/local_setup.sh
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/local_setup.zsh
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ament_index/resource_index/packages/ia_msgs
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ia_msgsConfig.cmake
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/cmake/ia_msgsConfig-version.cmake
+-- Symlinking: /home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/share/ia_msgs/package.xml
+Compiling '/home/blackjackdev/demos/ros2docker/ia_msgs/install/ia_msgs/lib/python3.6/site-packages/ia_msgs/__init__.py'...
+Invoked command in '/home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/blackjackdev/demos/ros2docker/ia_msgs/build/ia_msgs --target install
